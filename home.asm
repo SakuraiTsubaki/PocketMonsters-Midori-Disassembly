@@ -12,6 +12,7 @@ INCLUDE "constants/inventory.asm"
 INCLUDE "constants/list_menu.asm"
 INCLUDE "constants/names.asm"
 INCLUDE "constants/map_reload.asm"
+INCLUDE "constants/overworld.asm"
 INCLUDE "constants/audio_ids.asm"
 INCLUDE "constants/item_ids.asm"
 INCLUDE "constants/link.asm"
@@ -101,3 +102,4 @@ IF DEF(_REV0)
 ELIF DEF(_REVA)
     ASSERT @ == $1DA9
 ENDC
+INCLUDE "home/overworld_entry.asm"
