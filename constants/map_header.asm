@@ -1,0 +1,44 @@
+; Map-header, map-object, and sprite-loading symbols verified against the
+; uploaded Pocket Monsters Midori Rev 0 / Rev A ROMs.
+
+DEF wUnusedCurMapTilesetCopy EQU $D0DE
+
+DEF wCurMapHeader EQU $D2E6
+DEF wCurMapHeight EQU $D2E7
+DEF wCurMapDataPtr EQU $D2E9
+DEF wCurMapScriptPtr EQU $D2ED
+DEF wCurMapConnections EQU $D2EF
+DEF CUR_MAP_HEADER_LENGTH EQU $0A
+
+DEF wObjectDataPointerTemp EQU $D328
+DEF wMapBackgroundTile EQU $D32C
+DEF wNumSigns EQU $D42F
+DEF wSignCoords EQU $D430
+DEF wSignTextIDs EQU $D450
+DEF wMapSpriteExtraData EQU $D483
+
+DEF wSprite01StateData1 EQU $C110
+DEF wSprite01StateData1ImageIndex EQU $C112
+DEF wSprite01StateData2 EQU $C210
+DEF SPRITESTATEDATA1_LENGTH EQU $10
+DEF NUM_SPRITESTATEDATA_STRUCTS EQU $10
+
+DEF hPreviousTileset EQU $FF8B
+DEF hLoadSpriteTemp1 EQU $FF8D
+DEF hLoadSpriteTemp2 EQU $FF8E
+DEF hSignCoordPointer EQU $FF95
+
+DEF NORTH_F EQU 3
+DEF SOUTH_F EQU 2
+DEF WEST_F EQU 1
+DEF EAST_F EQU 0
+
+DEF BIT_TRAINER EQU 6
+DEF BIT_ITEM EQU 7
+
+DEF PREDEF_LOAD_TILESET_HEADER EQU $19
+
+DEF BANK03_MARK_TOWN_VISITED_AND_LOAD_TOGGLEABLE_OBJECTS_ADDR EQU $7445
+DEF BANK03_LOAD_WILD_DATA_ADDR EQU $4F2E
+DEF BANK03_MAP_SONGS_ADDR EQU $4693
+DEF MAP_SONGS_BANK EQU $03
