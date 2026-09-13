@@ -115,6 +115,8 @@ DEF wWarpEntries EQU $D32E
 DEF wDestinationWarpID EQU $D3AE
 DEF wNumSprites EQU $D460
 DEF wMapSpriteData EQU $D463
+DEF wTilesetBank EQU $D4AA
+DEF wTilesetGfxPtr EQU $D4AD
 DEF wCurrentMapHeight2 EQU $D4A3
 DEF wCurrentMapWidth2 EQU $D4A4
 DEF wPlayerMovingDirection EQU $D4A7
