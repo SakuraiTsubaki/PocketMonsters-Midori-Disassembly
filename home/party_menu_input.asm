@@ -5,7 +5,7 @@ HandlePartyMenuInput::
     ld [wMenuWrappingEnabled], a
     ld a, $40
     ld [wPartyMenuAnimMonEnabled], a
-    call BANK00_HANDLE_MENU_INPUT_ADDR
+    call BANK00_HANDLE_MENU_INPUT_UNDERSCORE_ADDR
     call BANK00_PLACE_UNFILLED_ARROW_CURSOR_ADDR
     ld b, a
     xor a
