@@ -1,0 +1,10 @@
+; RAM/HRAM addresses verified from the restored Bank 00 code.
+
+DEF wShadowOAM EQU $C300
+DEF wShadowOAMSize EQU $A0
+DEF wBuffer EQU $CEE4
+DEF hLoadedROMBank EQU $FFB8
+
+DEF SHADOW_OAM_ENTRY_SIZE EQU 4
+DEF SHADOW_OAM_COUNT EQU 40
+DEF HIDDEN_SPRITE_Y EQU $A0
