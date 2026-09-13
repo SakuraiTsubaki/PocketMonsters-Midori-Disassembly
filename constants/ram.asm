@@ -63,6 +63,7 @@ DEF wMapMusicSoundID EQU $D2DA
 DEF wMapMusicROMBank EQU $D2DB
 DEF wMapPalOffset EQU $D2DC
 DEF wWalkBikeSurfState EQU $D67F
+DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags4 EQU $D6AD
 DEF wStack EQU $DFFF
 
