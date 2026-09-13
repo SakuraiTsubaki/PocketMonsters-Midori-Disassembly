@@ -144,7 +144,7 @@ InterlaceMergeSpriteBuffers::
     jp CopyVideoData
 
 IF DEF(_REV0)
-    ASSERT @ == $3121
+    ASSERT @ == $30FE
 ELIF DEF(_REVA)
-    ASSERT @ == $310F
+    ASSERT @ == $30EC
 ENDC
