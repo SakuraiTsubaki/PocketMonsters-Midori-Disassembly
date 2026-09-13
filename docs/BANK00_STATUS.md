@@ -33,9 +33,21 @@ Bank 00 covers ROM offsets `0x0000-0x3FFF`.
 | `0AAC-0B3B` | semantic source | VBlank interrupt and frame-delay helper |
 | `0B3C-0BA6` | semantic + palette data | Game Boy palette loading and eight fade palettes |
 | `0BA7-0BF0` | semantic source | serial interrupt handler; byte-identical in both revisions |
-| `0BF1-0D99` Rev 0 / `0BF1-0D87` Rev A | semantic source with revision layout | serial transfer engine and helper block; helper block is physically relocated between revisions |
+| `0BF1-0D99` Rev 0 / `0BF1-0D87` Rev A | semantic source with revision layout | serial transfer engine; helper block is physically relocated between revisions |
+| `0D9A-0EBC` Rev 0 / `0D88-0EAA` Rev A | semantic source | Timer, default music selection, music/sound dispatch and fade control |
+| `0EBD-0FCD` Rev 0 / `0EAB-0FBB` Rev A | semantic + structured data/text | sprite-update wrapper, 16 mart inventories and shared overworld Japanese text |
+| `0FCE-1376` Rev 0 / `0FBC-1364` Rev A | semantic source | Generation I sprite RLE/bitstream decompressor, differential decode and chunk XOR |
+| `1377-13F0` Rev 0 / `1365-13DE` Rev A | semantic source | player sprite-state reset and audio fade-out engine |
+| `13F1-15DD` Rev 0 / `13DF-15CB` Rev A | semantic + readable Japanese text | `DisplayTextID`, NPC/map text dispatch, Pokémart/Pokémon Center handlers, faint/blackout/Repel messages |
+| `15DE-168F` Rev 0 / `15CC-167D` Rev A | semantic source | Start Menu display, wraparound, selection dispatch and close path |
+| `1690-16F6` Rev 0 / `167E-16E4` Rev A | semantic source | set-bit counter, BCD money update and inventory add/remove wrappers |
+| `16F7-1AAA` Rev 0 / `16E5-1A98` Rev A | semantic + readable data | list-menu initialization/input, quantity/price selector, exit path and visible-entry renderer |
+| `1AAB-1B85` Rev 0 / `1A99-1B73` Rev A | semantic + readable Japanese data | Pokémon/item/TM/HM/move name helpers and HM move table |
+| `1B86-1BCA` Rev 0 / `1B74-1BB8` Rev A | semantic source | map/tile graphics reload helpers and Fly destination handoff |
 
-The continuous restored Home source now reaches the `Timer` entry point: `0x0D9A` in Rev 0 and `0x0D88` in Rev A. Revision-specific call destinations and the serial helper relocation are represented with conditional source rather than duplicated banks.
+The continuous restored Home source now reaches `MapHeaderPointers`: `0x1BCB` in Rev 0 and `0x1BB9` in Rev A. From `0x0153`, this represents 6,776 bytes of continuous Rev 0 Home source and 6,758 bytes of continuous Rev A Home source.
+
+`MapHeaderPointers` itself is 496 bytes (248 pointers) and is byte-identical between the two uploaded revisions, so it can be represented once as shared structured data.
 
 ## Verified segment SHA-1 values
 
@@ -62,32 +74,32 @@ The continuous restored Home source now reaches the `Timer` entry point: `0x0D9A
 - `0BA7-0BF0` serial interrupt, both revisions: `225568e305f460263f40b7b06aee93e3e4b224d5`
 - `0BF1-0D99` Rev 0 serial core: `abda2608dc9a1b9c9b0193d18b88b6a8ef053606`
 - `0BF1-0D87` Rev A serial core: `a425133889bbf52c7cdb8bf330434f8f437511b2`
-- `0153-0D99` continuous Rev 0 region: `55269ba0e9b687328e179b724ce35b721095f30b`
-- `0153-0D87` continuous Rev A region: `11935672ab9d4f2601b6df614fa6c0542ce36123`
 
 Revision-specific pre-header assets:
 
 - Rev 0 `0068-00FF`: `e825cf552841abf607fea09748fcae672cbe2b79`
 - Rev A `0068-00FF`: `ab8bed6a4b09d119f383ca1f8b5c6050c0a83ee9`
 
-## Revision-aware serial layout
+## Revision-aware layout
 
-The serial routines are not merely shifted by a fixed address delta. Rev 0 places the link-menu/synchronization helper block before `Serial_ExchangeByte` and contains a receive-buffer special case for link reset. Rev A places the same helper block after the serial counter helpers. The repository models this with conditional `INCLUDE` placement and shared semantic source, ending exactly at each revision's `Timer` address.
+The two revisions are not modeled as duplicated source trees. Shared routines and data remain common, while revision-specific call destinations and the serial helper relocation are represented through conditional symbols/placement. This has already reproduced the distinct Rev 0 / Rev A address boundaries through `MapHeaderPointers`.
 
 ## Japanese text representation
 
-Recovered Japanese strings are stored as readable UTF-8 assembly strings using the project charmap. The charmap is expanded from ROM-verified byte mappings as additional text is recovered; raw hexadecimal string dumps are not the target representation.
+Recovered Japanese strings are stored as readable UTF-8 assembly strings using the project charmap. The charmap is expanded from ROM-verified byte mappings as additional text is recovered; raw hexadecimal text dumps are not the target representation.
 
 ## Assembly validation
 
-GitHub Actions assembles the source twice with RGBDS 1.0.3, once with `_REV0` and once with `_REVA`. Boundary `ASSERT`s check restored routine addresses throughout Bank 00. The serial-layout checkpoint completed successfully for both revisions.
+GitHub Actions assembles the source twice with RGBDS 1.0.3, once with `_REV0` and once with `_REVA`. Boundary `ASSERT`s validate the progressively restored layout for both revisions.
+
+A successful CI run proves that the restored semantic source assembles and reaches the expected revision-specific boundaries. It does **not by itself** prove whole-ROM byte equality. Full byte-exact verification remains a separate milestone once the complete bank/link layout is reconstructed.
 
 ## Cross-check reference
 
-The public Japanese Red/Green disassembly `Narishma-gb/pokegreen` independently targets the same Green V1.0/V1.1 full-ROM hashes. The checked reference commit is `953f41b34108621b2bf13c3b1e53abfc9c3e5aec`.
+The public Japanese Red/Green disassembly `Narishma-gb/pokegreen` is used to cross-check routine structure and symbol meaning. The checked reference commit is `953f41b34108621b2bf13c3b1e53abfc9c3e5aec`.
 
-The uploaded Midori ROMs remain the byte-level source of truth for this repository; the public project is used to cross-check structure and symbol meaning.
+The uploaded Midori Rev 0 / Rev A ROMs remain the byte-level source of truth for this repository.
 
 ## Next range
 
-Continue from each revision's `Timer` entry into default music selection, music/sound dispatch and sprite-update handoff.
+Restore the shared 248-entry `MapHeaderPointers` table beginning at Rev 0 `0x1BCB` / Rev A `0x1BB9`, then continue into the map-header/map-loading code that follows it.
