@@ -41,6 +41,7 @@ DEF wAudioSavedROMBank EQU $C0F0
 DEF wCurOpponent EQU $D036
 DEF wTextPredefFlag EQU $CF0C
 DEF wSpriteIndex EQU $CF0E
+DEF wBattleResult EQU $CF06
 DEF wItemList EQU $CF62
 DEF wListMenuID EQU $CF7B
 DEF wFontLoaded EQU $CFAB
