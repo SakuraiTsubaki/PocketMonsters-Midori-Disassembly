@@ -28,7 +28,11 @@ DEF hDMARoutine EQU $FF80
 DEF hSoftReset EQU $FF8A
 DEF hROMBankTemp EQU $FF8B
 DEF hTextID EQU $FF8C
+DEF hSerialReceivedNewData EQU $FFA9
 DEF hSerialConnectionStatus EQU $FFAA
+DEF hSerialIgnoringInitialData EQU $FFAB
+DEF hSerialSendData EQU $FFAC
+DEF hSerialReceiveData EQU $FFAD
 DEF hSCX EQU $FFAE
 DEF hSCY EQU $FFAF
 DEF hWY EQU $FFB0
