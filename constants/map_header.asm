@@ -12,12 +12,8 @@ DEF CUR_MAP_HEADER_LENGTH EQU $0A
 
 DEF wObjectDataPointerTemp EQU $D328
 DEF wMapBackgroundTile EQU $D32C
-DEF wNumSigns EQU $D42F
-DEF wSignCoords EQU $D430
-DEF wSignTextIDs EQU $D450
 DEF wMapSpriteExtraData EQU $D483
 
-DEF wSprite01StateData1 EQU $C110
 DEF wSprite01StateData1ImageIndex EQU $C112
 DEF wSprite01StateData2 EQU $C210
 DEF SPRITESTATEDATA1_LENGTH EQU $10
