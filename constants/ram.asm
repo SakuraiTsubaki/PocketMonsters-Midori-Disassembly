@@ -29,6 +29,7 @@ DEF wLinkMenuSelectionSendBuffer EQU $CC42
 DEF wSerialExchangeNybbleSendData EQU $CC42
 DEF wUnknownSerialCounter EQU $CC47
 DEF wEnteringCableClub EQU $CC47
+DEF wJoyIgnore EQU $CD66
 DEF wNameBuffer EQU $CD68
 DEF wBuffer EQU $CEE4
 DEF wNewSoundID EQU $C0EE
@@ -66,8 +67,10 @@ DEF wSpriteDecodeTable0Ptr EQU $D08E
 DEF wSpriteDecodeTable1Ptr EQU $D090
 DEF wVBlankSavedROMBank EQU $D0E7
 DEF wWalkBikeSurfStateCopy EQU $D0DF
+DEF wCurrentMapScriptFlags EQU $D0EB
 DEF wItemListPointer EQU $D0ED
 DEF wLinkState EQU $D0F0
+DEF wNumberOfNoRandomBattleStepsLeft EQU $D101
 DEF wPlayerName EQU $D11D
 DEF wRivalName EQU $D2CE
 DEF wLetterPrintingDelayFlags EQU $D2D7
@@ -80,6 +83,7 @@ DEF wNumSprites EQU $D460
 DEF wMapSpriteData EQU $D463
 DEF wWalkBikeSurfState EQU $D67F
 DEF wStatusFlags2 EQU $D6AB
+DEF wStatusFlags3 EQU $D6AC
 DEF wStatusFlags4 EQU $D6AD
 DEF wStatusFlags6 EQU $D6B1
 DEF wEventFlagsGotPokedexByte EQU $D6CA
