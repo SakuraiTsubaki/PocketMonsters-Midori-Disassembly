@@ -103,3 +103,4 @@ ELIF DEF(_REVA)
     ASSERT @ == $1DA9
 ENDC
 INCLUDE "home/overworld_entry.asm"
+INCLUDE "home/overworld_loop.asm"
