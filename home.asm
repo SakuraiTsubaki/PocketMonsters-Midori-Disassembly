@@ -39,3 +39,7 @@ INCLUDE "home/text_commands.asm"
 ASSERT @ == $0774
 INCLUDE "home/vcopy.asm"
 ASSERT @ == $09CF
+INCLUDE "home/init.asm"
+ASSERT @ == $0AAC
+INCLUDE "home/vblank.asm"
+ASSERT @ == $0B3C
