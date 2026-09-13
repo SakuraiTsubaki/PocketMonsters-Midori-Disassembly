@@ -29,6 +29,8 @@ DEF wLinkMenuSelectionSendBuffer EQU $CC42
 DEF wSerialExchangeNybbleSendData EQU $CC42
 DEF wUnknownSerialCounter EQU $CC47
 DEF wEnteringCableClub EQU $CC47
+DEF wCheckFor180DegreeTurn EQU $CC4B
+DEF wMiscFlags EQU $CD5B
 DEF wJoyIgnore EQU $CD66
 DEF wNameBuffer EQU $CD68
 DEF wBuffer EQU $CEE4
@@ -80,9 +82,13 @@ DEF wMapMusicSoundID EQU $D2DA
 DEF wMapMusicROMBank EQU $D2DB
 DEF wMapPalOffset EQU $D2DC
 DEF wCurMap EQU $D2DD
+DEF wCurMapTileset EQU $D2E6
 DEF wCurMapTextPtr EQU $D2EB
 DEF wNumSprites EQU $D460
 DEF wMapSpriteData EQU $D463
+DEF wPlayerMovingDirection EQU $D4A7
+DEF wPlayerLastStopDirection EQU $D4A8
+DEF wDestinationMap EQU $D699
 DEF wWalkBikeSurfState EQU $D67F
 DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags3 EQU $D6AC
@@ -133,6 +139,7 @@ DEF hFrameCounter EQU $FFD5
 DEF hVBlankOccurred EQU $FFD6
 DEF hTileAnimations EQU $FFD7
 DEF hMovingBGTilesCounter1 EQU $FFD8
+DEF hItemAlreadyFound EQU $FFEB
 DEF hWhoseTurn EQU $FFF3
 
 DEF SHADOW_OAM_ENTRY_SIZE EQU 4
