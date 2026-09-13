@@ -1,5 +1,10 @@
 ; Japanese Generation I text/control byte values verified from Bank 00.
 
+; Text command stream opcodes used by restored data.
+DEF TEXT_COMMAND_START EQU $00
+DEF TEXT_COMMAND_DECIMAL EQU $09
+DEF TEXT_DECIMAL_1BYTE_2DIGITS EQU $12
+
 DEF TEXT_TERMINATOR EQU $50
 DEF TEXT_NEXT EQU $4E
 DEF TEXT_LINE EQU $4F
