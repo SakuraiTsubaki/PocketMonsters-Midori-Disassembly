@@ -44,15 +44,16 @@ Bank 00 covers ROM offsets `0x0000-0x3FFF`.
 | `16F7-1AAA` Rev 0 / `16E5-1A98` Rev A | semantic + readable data | list-menu initialization/input, quantity/price selector, exit path and visible-entry renderer |
 | `1AAB-1B85` Rev 0 / `1A99-1B73` Rev A | semantic + readable Japanese data | Pokémon/item/TM/HM/move name helpers and HM move table |
 | `1B86-1BCA` Rev 0 / `1B74-1BB8` Rev A | semantic source | map/tile graphics reload helpers and Fly destination handoff |
+| `1BCB-1DBA` Rev 0 / `1BB9-1DA8` Rev A | structured data | 248-entry `MapHeaderPointers` table, annotated by map ID/name; byte-identical between revisions |
 
-The continuous restored Home source now reaches `MapHeaderPointers`: `0x1BCB` in Rev 0 and `0x1BB9` in Rev A. From `0x0153`, this represents 6,776 bytes of continuous Rev 0 Home source and 6,758 bytes of continuous Rev A Home source.
+The continuous restored Home source now reaches `HandleMidJump`: `0x1DBB` in Rev 0 and `0x1DA9` in Rev A. From `0x0153`, this represents 7,272 bytes of continuous Rev 0 Home source and 7,254 bytes of continuous Rev A Home source.
 
-`MapHeaderPointers` itself is 496 bytes (248 pointers) and is byte-identical between the two uploaded revisions, so it can be represented once as shared structured data.
+`MapHeaderPointers` is 496 bytes (248 pointers). Its bytes are identical between the uploaded revisions, so it is represented once as shared structured data. The current table uses ROM-verified numeric pointer values annotated with map names; those numeric values can be replaced with actual map-header labels as the corresponding banked map headers are restored.
 
 ## Verified segment SHA-1 values
 
 - `0153-0166` Joypad: `8e5eca4fe568f7d63a300a805c92bc082cfed62e`
-- `0167-0187` LCD: `51f6a040dc9bd7bbcba252daf56de1fd2eb98586`
+- `0167-0187` LCD: `51f6a040dc9b7bbcba252daf56de1fd2eb98586`
 - `0188-01A2` sprites: `cfb0771eb848456f6a860b282b510b8cff928ed0`
 - `01A3-01C3` copy: `43b352dcee74c283aabafcee72f01d6cba4e8dc2`
 - `01C4-028B` collision tables: `af69e30d0ddd85bf0f2be3fe6182073a5acc8099`
@@ -74,6 +75,7 @@ The continuous restored Home source now reaches `MapHeaderPointers`: `0x1BCB` in
 - `0BA7-0BF0` serial interrupt, both revisions: `225568e305f460263f40b7b06aee93e3e4b224d5`
 - `0BF1-0D99` Rev 0 serial core: `abda2608dc9a1b9c9b0193d18b88b6a8ef053606`
 - `0BF1-0D87` Rev A serial core: `a425133889bbf52c7cdb8bf330434f8f437511b2`
+- `1BCB-1DBA` Rev 0 / `1BB9-1DA8` Rev A `MapHeaderPointers`: `28bfa59f572f8a287ba6239e92d60fabe0f7b337`
 
 Revision-specific pre-header assets:
 
@@ -102,4 +104,4 @@ The uploaded Midori Rev 0 / Rev A ROMs remain the byte-level source of truth for
 
 ## Next range
 
-Restore the shared 248-entry `MapHeaderPointers` table beginning at Rev 0 `0x1BCB` / Rev A `0x1BB9`, then continue into the map-header/map-loading code that follows it.
+Continue from `HandleMidJump` at Rev 0 `0x1DBB` / Rev A `0x1DA9`, then restore the map-entry setup and overworld loop in semantic blocks while preserving revision-specific call destinations.
