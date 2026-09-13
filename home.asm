@@ -6,7 +6,9 @@ INCLUDE "constants/input.asm"
 INCLUDE "constants/text_tiles.asm"
 INCLUDE "constants/text_control.asm"
 INCLUDE "constants/text_commands.asm"
+INCLUDE "constants/text_scripts.asm"
 INCLUDE "constants/audio_ids.asm"
+INCLUDE "constants/item_ids.asm"
 INCLUDE "constants/link.asm"
 INCLUDE "constants/charmap.asm"
 
@@ -58,4 +60,12 @@ IF DEF(_REV0)
     ASSERT @ == $0EBD
 ELIF DEF(_REVA)
     ASSERT @ == $0EAB
+ENDC
+INCLUDE "home/update_sprites.asm"
+INCLUDE "data/items/marts.asm"
+INCLUDE "home/overworld_text.asm"
+IF DEF(_REV0)
+    ASSERT @ == $0FCE
+ELIF DEF(_REVA)
+    ASSERT @ == $0FBC
 ENDC
