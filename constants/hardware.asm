@@ -1,6 +1,9 @@
 ; Game Boy hardware addresses/bits used by the restored Bank 00 routines.
 
+DEF rRAMG EQU $0000
 DEF rROMB EQU $2000
+DEF rRAMB EQU $4000
+DEF RAMG_SRAM_ENABLE EQU $0A
 
 DEF rSB   EQU $FF01
 DEF rSC   EQU $FF02
