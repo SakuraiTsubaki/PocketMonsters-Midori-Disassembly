@@ -90,3 +90,14 @@ INCLUDE "home/list_menu.asm"
 INCLUDE "home/list_menu_entries.asm"
 INCLUDE "home/names.asm"
 INCLUDE "home/reload_tiles.asm"
+IF DEF(_REV0)
+    ASSERT @ == $1BCB
+ELIF DEF(_REVA)
+    ASSERT @ == $1BB9
+ENDC
+INCLUDE "data/maps/map_header_pointers.asm"
+IF DEF(_REV0)
+    ASSERT @ == $1DBB
+ELIF DEF(_REVA)
+    ASSERT @ == $1DA9
+ENDC
