@@ -35,11 +35,13 @@ DEF wBuffer EQU $CEE4
 DEF wNewSoundID EQU $C0EE
 DEF wAudioROMBank EQU $C0EF
 DEF wAudioSavedROMBank EQU $C0F0
+DEF wCurOpponent EQU $D036
 DEF wTextPredefFlag EQU $CF0C
 DEF wSpriteIndex EQU $CF0E
 DEF wItemList EQU $CF62
 DEF wListMenuID EQU $CF7B
 DEF wFontLoaded EQU $CFAB
+DEF wWalkCounter EQU $CFAC
 DEF wAudioFadeOutControl EQU $CFAE
 DEF wAudioFadeOutCounterReloadValue EQU $CFAF
 DEF wAudioFadeOutCounter EQU $CFB0
@@ -86,7 +88,9 @@ DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags3 EQU $D6AC
 DEF wStatusFlags4 EQU $D6AD
 DEF wStatusFlags6 EQU $D6B1
+DEF wMovementFlags EQU $D6B5
 DEF wEventFlagsGotPokedexByte EQU $D6CA
+DEF wSafariZoneGameOver EQU $D982
 DEF wStack EQU $DFFF
 
 DEF hDMARoutine EQU $FF80
