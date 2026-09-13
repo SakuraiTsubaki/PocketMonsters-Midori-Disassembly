@@ -30,6 +30,7 @@ DEF wSerialExchangeNybbleSendData EQU $CC42
 DEF wUnknownSerialCounter EQU $CC47
 DEF wEnteringCableClub EQU $CC47
 DEF wCheckFor180DegreeTurn EQU $CC4B
+DEF wStandingOnWarpPadOrHole EQU $CD51
 DEF wMiscFlags EQU $CD5B
 DEF wJoyIgnore EQU $CD66
 DEF wNameBuffer EQU $CD68
@@ -82,8 +83,16 @@ DEF wMapMusicSoundID EQU $D2DA
 DEF wMapMusicROMBank EQU $D2DB
 DEF wMapPalOffset EQU $D2DC
 DEF wCurMap EQU $D2DD
+DEF wYCoord EQU $D2E0
+DEF wXCoord EQU $D2E1
+DEF wLastMap EQU $D2E4
+DEF wUnusedLastMapWidth EQU $D2E5
 DEF wCurMapTileset EQU $D2E6
+DEF wCurMapWidth EQU $D2E8
 DEF wCurMapTextPtr EQU $D2EB
+DEF wNumberOfWarps EQU $D32D
+DEF wWarpEntries EQU $D32E
+DEF wDestinationWarpID EQU $D3AE
 DEF wNumSprites EQU $D460
 DEF wMapSpriteData EQU $D463
 DEF wPlayerMovingDirection EQU $D4A7
@@ -94,7 +103,10 @@ DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags3 EQU $D6AC
 DEF wStatusFlags4 EQU $D6AD
 DEF wStatusFlags6 EQU $D6B1
+DEF wStatusFlags7 EQU $D6B2
 DEF wMovementFlags EQU $D6B5
+DEF wWarpedFromWhichWarp EQU $D6BA
+DEF wWarpedFromWhichMap EQU $D6BB
 DEF wEventFlagsGotPokedexByte EQU $D6CA
 DEF wSafariZoneGameOver EQU $D982
 DEF wStack EQU $DFFF
@@ -103,6 +115,7 @@ DEF hDMARoutine EQU $FF80
 DEF hSoftReset EQU $FF8A
 DEF hROMBankTemp EQU $FF8B
 DEF hItemPrice EQU $FF8B
+DEF hWarpDestinationMap EQU $FF8B
 DEF hTextID EQU $FF8C
 DEF hSpriteIndex EQU $FF8C
 DEF hSerialReceivedNewData EQU $FFA9
