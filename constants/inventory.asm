@@ -1,5 +1,10 @@
 ; Inventory/money constants and verified targets used by restored Bank 00 routines.
 
+DEF wNumSetBits EQU $D0E3
+DEF wTextBoxID EQU $D0EA
+DEF wPlayerMoney EQU $D2CB
+DEF hMoney EQU $FF9F
+
 DEF MONEY_BOX EQU $13
 DEF SFX_PURCHASE EQU $B2
 DEF PREDEF_ADD_BCD EQU $0B
