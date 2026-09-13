@@ -1,7 +1,6 @@
 ; Map-data loading and bank-switching symbols verified against the uploaded
 ; Pocket Monsters Midori Rev 0 / Rev A ROMs.
 
-DEF wMapViewVRAMPointer EQU $D4A5
 DEF wSpriteSetID EQU $D327
 DEF wIgnoreInputCounter EQU $D0FF
 DEF wStatusFlags1 EQU $D6A7
@@ -15,13 +14,3 @@ DEF BIT_UNKNOWN_5_1 EQU 1
 
 DEF BANK03_MAP_HEADER_BANKS_ADDR EQU $4883
 DEF MAP_HEADER_BANKS_BANK EQU $03
-
-IF DEF(_REV0)
-    DEF BANK00_BANKSWITCH_HOME_ADDR EQU $3606
-    DEF BANK00_BANKSWITCH_BACK_ADDR EQU $3617
-ELIF DEF(_REVA)
-    DEF BANK00_BANKSWITCH_HOME_ADDR EQU $35F4
-    DEF BANK00_BANKSWITCH_BACK_ADDR EQU $3605
-ELSE
-    FAIL "Define exactly one Midori revision: _REV0 or _REVA"
-ENDC
