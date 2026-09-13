@@ -1,4 +1,4 @@
-; Generic list-menu initialization and interactive selection loop.
+; Generic list-menu initialization, selection loop, and quantity selector.
 
 DisplayListMenuID::
     xor a
@@ -207,4 +207,155 @@ IF DEF(_REV0)
     ASSERT @ == $186A
 ELIF DEF(_REVA)
     ASSERT @ == $1858
+ENDC
+
+DisplayChooseQuantityMenu::
+    ld hl, wTileMap + (9 * SCREEN_WIDTH) + 15
+    ld b, 1
+    ld c, 3
+    ld a, [wListMenuID]
+    cp PRICEDITEMLISTMENU
+    jr nz, .drawTextBox
+    ld hl, wTileMap + (9 * SCREEN_WIDTH) + 7
+    ld b, 1
+    ld c, 11
+.drawTextBox
+    call TextBoxBorder
+    ld hl, wTileMap + (10 * SCREEN_WIDTH) + 16
+    ld a, [wListMenuID]
+    cp PRICEDITEMLISTMENU
+    jr nz, .printInitialQuantity
+    ld a, "円"
+    ld [wTileMap + (10 * SCREEN_WIDTH) + 18], a
+    ld hl, wTileMap + (10 * SCREEN_WIDTH) + 8
+.printInitialQuantity
+    ld de, InitialQuantityText
+    call PlaceString
+    xor a
+    ld [wItemQuantity], a
+    jp .incrementQuantity
+
+.waitForKeyPressLoop
+    call BANK00_JOYPAD_LOW_SENSITIVITY_ADDR
+    ldh a, [hJoyPressed]
+    bit 0, a
+    jp nz, .buttonAPressed
+    bit 1, a
+    jp nz, .buttonBPressed
+    bit 6, a
+    jr nz, .incrementQuantity
+    bit 7, a
+    jr nz, .decrementQuantity
+    jr .waitForKeyPressLoop
+
+.incrementQuantity
+    ld a, [wMaxItemQuantity]
+    inc a
+    ld b, a
+    ld hl, wItemQuantity
+    inc [hl]
+    ld a, [hl]
+    cp b
+    jr nz, .handleNewQuantity
+    ld a, 1
+    ld [hl], a
+    jr .handleNewQuantity
+
+.decrementQuantity
+    ld hl, wItemQuantity
+    dec [hl]
+    jr nz, .handleNewQuantity
+    ld a, [wMaxItemQuantity]
+    ld [hl], a
+
+.handleNewQuantity
+    ld hl, wTileMap + (10 * SCREEN_WIDTH) + 17
+    ld a, [wListMenuID]
+    cp PRICEDITEMLISTMENU
+    jr nz, .printQuantity
+
+.printPrice
+    ld c, $03
+    ld a, [wItemQuantity]
+    ld b, a
+    ld hl, hMoney
+    xor a
+    ld [hli], a
+    ld [hli], a
+    ld [hl], a
+
+.addLoop
+    ld de, hMoney + 2
+    ld hl, hItemPrice + 2
+    push bc
+    ld a, PREDEF_ADD_BCD
+    call BANK00_PREDEF_ADDR
+    pop bc
+    dec b
+    jr nz, .addLoop
+
+    ldh a, [hHalveItemPrices]
+    and a
+    jr z, .skipHalvingPrice
+    xor a
+    ldh [hDivideBCDDivisor], a
+    ldh [hDivideBCDDivisor + 1], a
+    ld a, $02
+    ldh [hDivideBCDDivisor + 2], a
+    ld a, PREDEF_DIVIDE_BCD_3
+    call BANK00_PREDEF_ADDR
+    ldh a, [hDivideBCDQuotient]
+    ldh [hMoney], a
+    ldh a, [hDivideBCDQuotient + 1]
+    ldh [hMoney + 1], a
+    ldh a, [hDivideBCDQuotient + 2]
+    ldh [hMoney + 2], a
+
+.skipHalvingPrice
+    ld hl, wTileMap + (10 * SCREEN_WIDTH) + 12
+    ld de, SpacesBetweenQuantityAndPriceText
+    call PlaceString
+    ld de, hMoney
+    ld c, 3 | LEADING_ZEROES
+    call BANK00_PRINT_BCD_NUMBER_ADDR
+    ld hl, wTileMap + (10 * SCREEN_WIDTH) + 9
+
+.printQuantity
+    ld de, wItemQuantity
+    ld bc, $8102
+    call BANK00_PRINT_NUMBER_ADDR
+    jp .waitForKeyPressLoop
+
+.buttonAPressed
+    xor a
+    ret
+
+.buttonBPressed
+    ld a, $FF
+    ret
+
+InitialQuantityText::
+    db "×０１@"
+
+SpacesBetweenQuantityAndPriceText::
+    db "　　　　　　@"
+
+ExitListMenu::
+    ld a, [wCurrentMenuItem]
+    ld [wChosenMenuItem], a
+    ld a, CANCELLED_MENU
+    ld [wMenuExitMethod], a
+    ld [wMenuWatchMovingOutOfBounds], a
+    xor a
+    ld [hJoy7], a
+    ld hl, wStatusFlags5
+    res BIT_NO_TEXT_DELAY, [hl]
+    call BANK00_BANKSWITCH_BACK_ADDR
+    scf
+    ret
+
+IF DEF(_REV0)
+    ASSERT @ == $1968
+ELIF DEF(_REVA)
+    ASSERT @ == $1956
 ENDC
