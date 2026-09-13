@@ -69,3 +69,9 @@ IF DEF(_REV0)
 ELIF DEF(_REVA)
     ASSERT @ == $0FBC
 ENDC
+INCLUDE "home/uncompress.asm"
+IF DEF(_REV0)
+    ASSERT @ == $1377
+ELIF DEF(_REVA)
+    ASSERT @ == $1365
+ENDC
