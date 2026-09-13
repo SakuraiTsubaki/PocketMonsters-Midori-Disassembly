@@ -1,5 +1,6 @@
 ; RAM/HRAM addresses verified from restored Bank 00 instructions.
 
+DEF wChannelSoundIDs EQU $C026
 DEF wShadowOAM EQU $C300
 DEF wShadowOAMSize EQU $A0
 DEF wTileMap EQU $C3A0
@@ -18,6 +19,8 @@ DEF wNewSoundID EQU $C0EE
 DEF wAudioROMBank EQU $C0EF
 DEF wAudioSavedROMBank EQU $C0F0
 DEF wAudioFadeOutControl EQU $CFAE
+DEF wAudioFadeOutCounterReloadValue EQU $CFAF
+DEF wAudioFadeOutCounter EQU $CFB0
 DEF wLastMusicSoundID EQU $CFB1
 DEF wUpdateSpritesEnabled EQU $CFB2
 DEF wEnemyMonNick EQU $CFC1
@@ -30,7 +33,11 @@ DEF wLinkState EQU $D0F0
 DEF wPlayerName EQU $D11D
 DEF wRivalName EQU $D2CE
 DEF wLetterPrintingDelayFlags EQU $D2D7
+DEF wMapMusicSoundID EQU $D2DA
+DEF wMapMusicROMBank EQU $D2DB
 DEF wMapPalOffset EQU $D2DC
+DEF wWalkBikeSurfState EQU $D67F
+DEF wStatusFlags4 EQU $D6AD
 DEF wStack EQU $DFFF
 
 DEF hDMARoutine EQU $FF80
@@ -48,6 +55,7 @@ DEF hWY EQU $FFB0
 DEF hJoyHeld EQU $FFB4
 DEF hJoy5 EQU $FFB5
 DEF hLoadedROMBank EQU $FFB8
+DEF hSavedROMBank EQU $FFB9
 DEF hAutoBGTransferEnabled EQU $FFBA
 DEF hAutoBGTransferPortion EQU $FFBB
 DEF hAutoBGTransferDest EQU $FFBC
