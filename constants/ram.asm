@@ -19,8 +19,9 @@ DEF wDisableVBlankWYUpdate EQU $D07D
 DEF wVBlankSavedROMBank EQU $D0E7
 DEF wLinkState EQU $D0F0
 DEF wPlayerName EQU $D11D
-DEF wLetterPrintingDelayFlags EQU $D2D7
 DEF wRivalName EQU $D2CE
+DEF wLetterPrintingDelayFlags EQU $D2D7
+DEF wMapPalOffset EQU $D2DC
 DEF wStack EQU $DFFF
 
 DEF hDMARoutine EQU $FF80
