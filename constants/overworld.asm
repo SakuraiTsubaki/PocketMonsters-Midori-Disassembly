@@ -1,8 +1,8 @@
 ; Overworld-entry constants verified from the uploaded Midori ROMs.
+; BIT_FLY_WARP and BIT_BATTLE_OVER_OR_BLACKOUT are already shared by
+; earlier restored systems, so they are reused rather than redefined here.
 
 DEF BIT_WILD_ENCOUNTER_COOLDOWN EQU 0
-DEF BIT_BATTLE_OVER_OR_BLACKOUT EQU 5
-DEF BIT_FLY_WARP EQU 3
 DEF BIT_DUNGEON_WARP EQU 4
 DEF BIT_NO_NPC_FACE_PLAYER EQU 5
 DEF BIT_CUR_MAP_LOADED_1 EQU 5
