@@ -6,6 +6,7 @@ DEF wTileMap EQU $C3A0
 DEF wBuffer EQU $CEE4
 DEF wEnemyMonNick EQU $CFC1
 DEF wBattleMonNick EQU $CFF0
+DEF wLinkState EQU $D0F0
 DEF wPlayerName EQU $D11D
 DEF wRivalName EQU $D2CE
 
