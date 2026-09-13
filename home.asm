@@ -37,3 +37,5 @@ INCLUDE "home/text_flow.asm"
 ASSERT @ == $05F1
 INCLUDE "home/text_commands.asm"
 ASSERT @ == $0774
+INCLUDE "home/vcopy.asm"
+ASSERT @ == $09CF
