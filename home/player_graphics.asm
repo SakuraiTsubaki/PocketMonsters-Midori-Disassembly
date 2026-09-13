@@ -18,17 +18,17 @@ LoadPlayerSpriteGraphics::
     xor a
     ld [wWalkBikeSurfState], a
     ld [wWalkBikeSurfStateCopy], a
-    jp BANK00_LOAD_WALKING_PLAYER_GFX_ADDR
+    jp LoadWalkingPlayerSpriteGraphics
 
 .determineGraphics
     ld a, [wWalkBikeSurfState]
     and a
-    jp z, BANK00_LOAD_WALKING_PLAYER_GFX_ADDR
+    jp z, LoadWalkingPlayerSpriteGraphics
     dec a
-    jp z, BANK00_LOAD_BIKE_PLAYER_GFX_ADDR
+    jp z, LoadBikePlayerSpriteGraphics
     dec a
-    jp z, BANK00_LOAD_SURFING_PLAYER_GFX_ADDR
-    jp BANK00_LOAD_WALKING_PLAYER_GFX_ADDR
+    jp z, LoadSurfingPlayerSpriteGraphics
+    jp LoadWalkingPlayerSpriteGraphics
 
 IsBikeRidingAllowed::
     ld a, [wCurMap]
