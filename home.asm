@@ -47,3 +47,9 @@ INCLUDE "home/fade.asm"
 ASSERT @ == $0BA7
 INCLUDE "home/serial_interrupt.asm"
 ASSERT @ == $0BF1
+INCLUDE "home/serial_core.asm"
+IF DEF(_REV0)
+    ASSERT @ == $0D9A
+ELIF DEF(_REVA)
+    ASSERT @ == $0D88
+ENDC
