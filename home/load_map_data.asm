@@ -112,3 +112,30 @@ IF DEF(_REV0)
 ELIF DEF(_REVA)
     ASSERT @ == $2CF7
 ENDC
+
+LoadDestinationWarpPosition::
+    ld b, a
+    ldh a, [hLoadedROMBank]
+    push af
+    ld a, [wPredefParentBank]
+    ldh [hLoadedROMBank], a
+    ld [rROMB], a
+    ld a, b
+    add a
+    add a
+    ld c, a
+    ld b, $00
+    add hl, bc
+    ld bc, $0004
+    ld de, wCurrentTileBlockMapViewPointer
+    call CopyData
+    pop af
+    ldh [hLoadedROMBank], a
+    ld [rROMB], a
+    ret
+
+IF DEF(_REV0)
+    ASSERT @ == $2D2C
+ELIF DEF(_REVA)
+    ASSERT @ == $2D1A
+ENDC
