@@ -30,6 +30,10 @@ DEF wSerialExchangeNybbleSendData EQU $CC42
 DEF wUnknownSerialCounter EQU $CC47
 DEF wEnteringCableClub EQU $CC47
 DEF wCheckFor180DegreeTurn EQU $CC4B
+DEF wSimulatedJoypadStatesEnd EQU $CCD3
+DEF wSimulatedJoypadStatesIndex EQU $CD38
+DEF wWastedByteCD3A EQU $CD3A
+DEF wOverrideSimulatedJoypadStatesMask EQU $CD3B
 DEF wStandingOnWarpPadOrHole EQU $CD51
 DEF wMiscFlags EQU $CD5B
 DEF wJoyIgnore EQU $CD66
@@ -126,6 +130,7 @@ DEF wWalkBikeSurfState EQU $D67F
 DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags3 EQU $D6AC
 DEF wStatusFlags4 EQU $D6AD
+DEF wFlags_D6AF EQU $D6AF
 DEF wStatusFlags6 EQU $D6B1
 DEF wStatusFlags7 EQU $D6B2
 DEF wMovementFlags EQU $D6B5
@@ -150,6 +155,7 @@ DEF hSerialReceiveData EQU $FFAD
 DEF hSCX EQU $FFAE
 DEF hSCY EQU $FFAF
 DEF hWY EQU $FFB0
+DEF hJoyReleased EQU $FFB2
 DEF hJoyPressed EQU $FFB3
 DEF hJoyHeld EQU $FFB4
 DEF hJoy5 EQU $FFB5
