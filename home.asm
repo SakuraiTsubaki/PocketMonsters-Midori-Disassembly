@@ -77,3 +77,4 @@ IF DEF(_REV0)
 ELIF DEF(_REVA)
     ASSERT @ == $13DF
 ENDC
+INCLUDE "home/text_script.asm"
