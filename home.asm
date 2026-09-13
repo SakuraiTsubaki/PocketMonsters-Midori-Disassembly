@@ -43,3 +43,5 @@ INCLUDE "home/init.asm"
 ASSERT @ == $0AAC
 INCLUDE "home/vblank.asm"
 ASSERT @ == $0B3C
+INCLUDE "home/fade.asm"
+ASSERT @ == $0BA7
