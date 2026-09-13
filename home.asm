@@ -104,3 +104,4 @@ ELIF DEF(_REVA)
 ENDC
 INCLUDE "home/overworld_entry.asm"
 INCLUDE "home/overworld_loop.asm"
+INCLUDE "home/overworld_interaction.asm"
