@@ -4,20 +4,15 @@
 DEF wUnusedCurMapTilesetCopy EQU $D0DE
 
 DEF wCurMapHeader EQU $D2E6
-DEF wCurMapHeight EQU $D2E7
-DEF wCurMapDataPtr EQU $D2E9
 DEF wCurMapScriptPtr EQU $D2ED
 DEF wCurMapConnections EQU $D2EF
 DEF CUR_MAP_HEADER_LENGTH EQU $0A
 
 DEF wObjectDataPointerTemp EQU $D328
-DEF wMapBackgroundTile EQU $D32C
 DEF wMapSpriteExtraData EQU $D483
 
 DEF wSprite01StateData1ImageIndex EQU $C112
 DEF wSprite01StateData2 EQU $C210
-DEF SPRITESTATEDATA1_LENGTH EQU $10
-DEF NUM_SPRITESTATEDATA_STRUCTS EQU $10
 
 DEF hPreviousTileset EQU $FF8B
 DEF hLoadSpriteTemp1 EQU $FF8D
