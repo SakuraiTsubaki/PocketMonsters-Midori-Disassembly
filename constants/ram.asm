@@ -16,7 +16,9 @@ DEF SPRITE_STATE_DATA_LENGTH EQU $100
 DEF wShadowOAM EQU $C300
 DEF wShadowOAMSize EQU $A0
 DEF wTileMap EQU $C3A0
-DEF wRedrawRowOrColumnSrcTiles EQU $CBFC
+DEF wCurrentMenuItem EQU $CC26
+DEF wLastMenuItem EQU $CC2A
+DEF wBattleAndStartSavedMenuItem EQU $CC2D
 DEF wTextDest EQU $CC3A
 DEF wDoNotWaitForButtonPressAfterDisplayingText EQU $CC3C
 DEF wLinkMenuSelectionReceiveBuffer EQU $CC3D
@@ -63,6 +65,7 @@ DEF wSpriteOutputPtrCached EQU $D08C
 DEF wSpriteDecodeTable0Ptr EQU $D08E
 DEF wSpriteDecodeTable1Ptr EQU $D090
 DEF wVBlankSavedROMBank EQU $D0E7
+DEF wWalkBikeSurfStateCopy EQU $D0DF
 DEF wItemListPointer EQU $D0ED
 DEF wLinkState EQU $D0F0
 DEF wPlayerName EQU $D11D
@@ -79,6 +82,7 @@ DEF wWalkBikeSurfState EQU $D67F
 DEF wStatusFlags2 EQU $D6AB
 DEF wStatusFlags4 EQU $D6AD
 DEF wStatusFlags6 EQU $D6B1
+DEF wEventFlagsGotPokedexByte EQU $D6CA
 DEF wStack EQU $DFFF
 
 DEF hDMARoutine EQU $FF80
@@ -95,6 +99,7 @@ DEF hSerialReceiveData EQU $FFAD
 DEF hSCX EQU $FFAE
 DEF hSCY EQU $FFAF
 DEF hWY EQU $FFB0
+DEF hJoyPressed EQU $FFB3
 DEF hJoyHeld EQU $FFB4
 DEF hJoy5 EQU $FFB5
 DEF hLoadedROMBank EQU $FFB8
