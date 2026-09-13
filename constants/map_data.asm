@@ -1,6 +1,7 @@
 ; Map-data loading and bank-switching symbols verified against the uploaded
 ; Pocket Monsters Midori Rev 0 / Rev A ROMs.
 
+DEF wPredefParentBank EQU $CF0D
 DEF wSpriteSetID EQU $D327
 DEF wIgnoreInputCounter EQU $D0FF
 DEF wStatusFlags1 EQU $D6A7
