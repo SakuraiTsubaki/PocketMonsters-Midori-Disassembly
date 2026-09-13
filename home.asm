@@ -53,3 +53,9 @@ IF DEF(_REV0)
 ELIF DEF(_REVA)
     ASSERT @ == $0D88
 ENDC
+INCLUDE "home/audio.asm"
+IF DEF(_REV0)
+    ASSERT @ == $0EBD
+ELIF DEF(_REVA)
+    ASSERT @ == $0EAB
+ENDC
