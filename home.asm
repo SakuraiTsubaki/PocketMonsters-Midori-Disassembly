@@ -8,6 +8,7 @@ INCLUDE "constants/text_control.asm"
 INCLUDE "constants/text_commands.asm"
 INCLUDE "constants/text_scripts.asm"
 INCLUDE "constants/start_menu.asm"
+INCLUDE "constants/inventory.asm"
 INCLUDE "constants/audio_ids.asm"
 INCLUDE "constants/item_ids.asm"
 INCLUDE "constants/link.asm"
@@ -80,3 +81,5 @@ ELIF DEF(_REVA)
 ENDC
 INCLUDE "home/text_script.asm"
 INCLUDE "home/start_menu.asm"
+INCLUDE "home/count_set_bits.asm"
+INCLUDE "home/inventory.asm"
