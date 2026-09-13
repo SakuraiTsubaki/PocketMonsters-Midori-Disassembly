@@ -1,6 +1,5 @@
 ; Land collision symbols verified from Bank 00.
 
-DEF wSimulatedJoypadStatesIndex EQU $CD38
 DEF wSpritePlayerStateData1CollisionData EQU $C10C
 DEF wTileInFrontOfPlayer EQU $CFAD
 DEF wTilesetCollisionPtr EQU $D4AF
