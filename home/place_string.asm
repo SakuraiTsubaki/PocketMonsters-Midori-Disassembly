@@ -2,7 +2,11 @@
 ; Core Japanese text byte parser and kana diacritic handling.
 
 MACRO text_control_jump
-    cp \1
+    IF \1 == 0
+        and a
+    ELSE
+        cp \1
+    ENDC
     jp z, \2
 ENDM
 
