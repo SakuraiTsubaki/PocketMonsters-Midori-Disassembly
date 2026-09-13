@@ -1,3 +1,8 @@
-; Link state values used by the restored Bank 00 dialogue code.
+; Link/serial state values verified from restored Bank 00 code.
 
 DEF LINK_STATE_BATTLING EQU $04
+
+DEF USING_EXTERNAL_CLOCK EQU $01
+DEF USING_INTERNAL_CLOCK EQU $02
+DEF CONNECTION_NOT_ESTABLISHED EQU $FF
+DEF SERIAL_NO_DATA_BYTE EQU $FE
