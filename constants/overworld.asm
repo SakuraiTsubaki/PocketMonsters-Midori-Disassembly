@@ -1,6 +1,6 @@
 ; Overworld constants verified from the uploaded Midori ROMs.
-; BIT_FLY_WARP and BIT_BATTLE_OVER_OR_BLACKOUT are already shared by
-; earlier restored systems, so they are reused rather than redefined here.
+; BIT_FLY_WARP, BIT_BATTLE_OVER_OR_BLACKOUT and BIT_NO_BATTLES are already
+; shared by earlier restored systems, so they are reused rather than redefined.
 
 DEF BIT_WILD_ENCOUNTER_COOLDOWN EQU 0
 DEF BIT_DUNGEON_WARP EQU 4
@@ -20,7 +20,6 @@ DEF BIT_EVENT_IN_SAFARI_ZONE EQU 7
 DEF BIT_TALKED_TO_TRAINER EQU 6
 DEF BIT_TRAINER_BATTLE EQU 3
 DEF BIT_ON_DUNGEON_WARP EQU 4
-DEF BIT_NO_BATTLES EQU 4
 DEF BIT_EVENT_2A7 EQU 7
 
 DEF PLAYER_DIR_RIGHT EQU $01
