@@ -70,8 +70,10 @@ ELIF DEF(_REVA)
     ASSERT @ == $0FBC
 ENDC
 INCLUDE "home/uncompress.asm"
+INCLUDE "home/reset_player_sprite.asm"
+INCLUDE "home/fade_audio.asm"
 IF DEF(_REV0)
-    ASSERT @ == $1377
+    ASSERT @ == $13F1
 ELIF DEF(_REVA)
-    ASSERT @ == $1365
+    ASSERT @ == $13DF
 ENDC
