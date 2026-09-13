@@ -5,6 +5,13 @@ DEF sSpriteBuffer2 EQU $A310
 DEF SPRITE_BUFFER_SIZE EQU $188
 
 DEF wChannelSoundIDs EQU $C026
+DEF wSpriteStateData1 EQU $C100
+DEF wSpritePlayerStateData1PictureID EQU $C100
+DEF wSpritePlayerStateData1YPixels EQU $C104
+DEF wSpritePlayerStateData1XPixels EQU $C106
+DEF wSpriteStateData2 EQU $C200
+DEF wSpritePlayerStateData2ImageBaseOffset EQU $C20E
+DEF SPRITE_STATE_DATA_LENGTH EQU $100
 DEF wShadowOAM EQU $C300
 DEF wShadowOAMSize EQU $A0
 DEF wTileMap EQU $C3A0
