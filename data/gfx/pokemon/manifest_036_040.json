@@ -1,0 +1,165 @@
+{
+  "source_roms": {
+    "rev0_sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+    "reva_sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b"
+  },
+  "batch": "pokemon_036_040",
+  "deduplication": "Identical decoded pixel data across revisions is stored once; revision membership is recorded in metadata.",
+  "entries": [
+    {
+      "dex": 36,
+      "name": "clefable",
+      "base_stats_offset": "0x383D4",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x6677",
+      "back_pointer": "0x67A3",
+      "front": {
+        "bank": "0x0C",
+        "rom_offset": "0x32677",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "91084879945736683dc029d3676678b4604beb8a31dbf527b256096f7f1c91fd",
+        "rev_a_pixel_sha256": "91084879945736683dc029d3676678b4604beb8a31dbf527b256096f7f1c91fd",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/036_clefable.png",
+        "png_sha256": "319ca1e6f4f200d8f43bcd4cc59ff8ab3028d0638ff132852c449519c49fd55c"
+      },
+      "back": {
+        "bank": "0x0C",
+        "rom_offset": "0x327A3",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "a2a24ffebc5180267fd76d7a172a54c47cec1af8ad2e30f8b44ef0cd3c81db57",
+        "rev_a_pixel_sha256": "a2a24ffebc5180267fd76d7a172a54c47cec1af8ad2e30f8b44ef0cd3c81db57",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/036_clefable.png",
+        "png_sha256": "079fe5bd397bfff17de1d1231c6934e81db2402dbcea8f16f1ed496e10112da0"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 37,
+      "name": "vulpix",
+      "base_stats_offset": "0x383F0",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x48B8",
+      "back_pointer": "0x49E1",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2C8B8",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "e79be284166a82e186a505cb5b54b3d94482e47b4c92538e4d5250349c2e35c5",
+        "rev_a_pixel_sha256": "e79be284166a82e186a505cb5b54b3d94482e47b4c92538e4d5250349c2e35c5",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/037_vulpix.png",
+        "png_sha256": "7cef22f084daa68650ea98c680a0c538e53ed74423525694a6dfd350e320aa8d"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2C9E1",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "c3e60150a45f75e71bb985eaaa7e13d4cceea0343f4269fffade636b7f29c1ca",
+        "rev_a_pixel_sha256": "c3e60150a45f75e71bb985eaaa7e13d4cceea0343f4269fffade636b7f29c1ca",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/037_vulpix.png",
+        "png_sha256": "77ecf2e7addf281f4c3b06368eb71cf8537c3945a0c8a6d6ab9fadbfb865cda2"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 38,
+      "name": "ninetales",
+      "base_stats_offset": "0x3840C",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x4A46",
+      "back_pointer": "0x4C43",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2CA46",
+        "width": 56,
+        "height": 56,
+        "pixel_sha256": "dd8206bdf19e709a785c4890026024cbd395d752a8f1f00ab9aecb01348c5816",
+        "rev_a_pixel_sha256": "dd8206bdf19e709a785c4890026024cbd395d752a8f1f00ab9aecb01348c5816",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/038_ninetales.png",
+        "png_sha256": "9b96a9d425774fd0d62fe56328f5058746264b60b3d65f2ed563558ccbfa2de8"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2CC43",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "111084a1270eadde1ec358295e418b00f3efc0b6d839dbb9627dc67a65dedd60",
+        "rev_a_pixel_sha256": "111084a1270eadde1ec358295e418b00f3efc0b6d839dbb9627dc67a65dedd60",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/038_ninetales.png",
+        "png_sha256": "786951e73ba1950646816358a7b6003d214dc94911a5ec85a401fd09ae9065fd"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 39,
+      "name": "jigglypuff",
+      "base_stats_offset": "0x38428",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x6142",
+      "back_pointer": "0x6208",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2E142",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "71bc5dd8850b2e8879dbdfb4a2cd7f7fc9e3a2c240f12b482b77fc920f4f4e8b",
+        "rev_a_pixel_sha256": "71bc5dd8850b2e8879dbdfb4a2cd7f7fc9e3a2c240f12b482b77fc920f4f4e8b",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/039_jigglypuff.png",
+        "png_sha256": "602f731ebb1199582eabb9bd83d5bf45dd2ff07201cba806e2413454b640b682"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2E208",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "85264f72775e65eb130dcd5675659bb6ea21671ad9c49b91e64059136103cff3",
+        "rev_a_pixel_sha256": "85264f72775e65eb130dcd5675659bb6ea21671ad9c49b91e64059136103cff3",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/039_jigglypuff.png",
+        "png_sha256": "fd91ad4eb298bda43bda1bfcb2983cec2957e0046bb2826f403c778c5f3202a1"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 40,
+      "name": "wigglytuff",
+      "base_stats_offset": "0x38444",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x6241",
+      "back_pointer": "0x63BE",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2E241",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "52ddf70c0cae4aabd9c63893f78afa32396ff64e4e8bf23bfe49c596331b731a",
+        "rev_a_pixel_sha256": "52ddf70c0cae4aabd9c63893f78afa32396ff64e4e8bf23bfe49c596331b731a",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/040_wigglytuff.png",
+        "png_sha256": "8f7907bd099384239ac90dec8535bf1266b7ff0e097ea40c656460a873d085af"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2E3BE",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "682e53b93f12c509bbb0e4f59351bbf546340177bcf44ed59e103b596f2b6a7d",
+        "rev_a_pixel_sha256": "682e53b93f12c509bbb0e4f59351bbf546340177bcf44ed59e103b596f2b6a7d",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/040_wigglytuff.png",
+        "png_sha256": "3498a78ef5308e1c39d607bb76367f05cc7e08becd746ffec535a354f2290616"
+      },
+      "base_stats_identical_rev0_reva": true
+    }
+  ]
+}
