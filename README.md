@@ -2,6 +2,19 @@
 
 Disassembly of Japanese Pocket Monsters Midori (Green), supporting Rev 0 and Rev A with source, graphics, text, audio, maps, and data for byte-exact ROM reconstruction.
 
+## Research restart — 2026-09-14
+
+The current research environment has **no local retail ROM images available**. Work therefore proceeds from publicly accessible evidence: public disassemblies and source reconstructions, repository history, official material, technical documentation, maps, graphics, text, audio, release metadata, glitch/unused-data research, archives, and other attributable public sources.
+
+The governing scope is **Japanese releases as the historical origin point, followed by an exhaustive survey of all regional, language, revision, and official re-release variants**. Existing repository claims and earlier analysis are retained as evidence, but are revalidated rather than automatically trusted.
+
+Current restart ledgers:
+
+- [`docs/PUBLIC_SOURCE_CENSUS.md`](docs/PUBLIC_SOURCE_CENSUS.md) — public-source evidence registry and search frontier.
+- [`docs/PUBLIC_GITHUB_CRAWL_2026-09-14.md`](docs/PUBLIC_GITHUB_CRAWL_2026-09-14.md) — repository/branch/fork discovery and classification queue.
+
+Any older references to locally available source ROMs or direct byte comparisons record an earlier analysis state and **do not describe the currently available inputs**.
+
 ## Goal
 
 Reconstruct both Japanese Midori revisions from repository contents alone, without requiring an original ROM as a build input. Generated ROM binaries are build outputs and are not committed.
