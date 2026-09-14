@@ -1,0 +1,65 @@
+{
+  "source_roms": {
+    "rev0_sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+    "reva_sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b"
+  },
+  "batch": "pokemon_086_090",
+  "deduplication": "Identical decoded pixel data across revisions is stored once; revision membership is recorded in metadata.",
+  "entries": [
+    {
+      "dex": 86,
+      "name": "seel",
+      "base_stats_offset": "0x3894C",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x6CBD",
+      "back_pointer": "0x6DF6",
+      "front": {"bank":"0x0A","rom_offset":"0x2ACBD","width":48,"height":48,"pixel_sha256":"3aeedbf18371b6e4609d5a7dd84274a0c782f98334aa24dbcf24db3685a2ed46","rev_a_pixel_sha256":"3aeedbf18371b6e4609d5a7dd84274a0c782f98334aa24dbcf24db3685a2ed46","identical_rev0_reva":true,"png":"gfx/pokemon/front/086_seel.png","png_sha256":"0f7f444b3bebbb4a1d547f74e06df2e4b5581a30e3524bf8ab32a085343df115"},
+      "back": {"bank":"0x0A","rom_offset":"0x2ADF6","width":32,"height":32,"pixel_sha256":"600de69f36a992a6feb8bfc4f72971c4c95b5f8d5ce1b6d1002d07d930ea17ed","rev_a_pixel_sha256":"600de69f36a992a6feb8bfc4f72971c4c95b5f8d5ce1b6d1002d07d930ea17ed","identical_rev0_reva":true,"png":"gfx/pokemon/back/086_seel.png","png_sha256":"0a17ad64dd140469bbc1d0938020bd78faf5ac6b4c2609ff549f13635393f3fa"},
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 87,
+      "name": "dewgong",
+      "base_stats_offset": "0x38968",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x46C5",
+      "back_pointer": "0x4812",
+      "front": {"bank":"0x0C","rom_offset":"0x306C5","width":48,"height":48,"pixel_sha256":"8c9c085f1165c6387d1e32bb4535437d5ee716051133cf5f8a70c7e20733abac","rev_a_pixel_sha256":"8c9c085f1165c6387d1e32bb4535437d5ee716051133cf5f8a70c7e20733abac","identical_rev0_reva":true,"png":"gfx/pokemon/front/087_dewgong.png","png_sha256":"0d480d325a2e61f84b9b6ec44b1a631b1d04ec9df2d7f7164c55a7457fff6813"},
+      "back": {"bank":"0x0C","rom_offset":"0x30812","width":32,"height":32,"pixel_sha256":"58319e78ea315961c27a98296e9602245678ecd278d98887ed861d45f698eaee","rev_a_pixel_sha256":"58319e78ea315961c27a98296e9602245678ecd278d98887ed861d45f698eaee","identical_rev0_reva":true,"png":"gfx/pokemon/back/087_dewgong.png","png_sha256":"07ec1bed346f69bfba6a2213e64e75d7e53a20d31d57a5241fe48069a6cde2f0"},
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 88,
+      "name": "grimer",
+      "base_stats_offset": "0x38984",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x599E",
+      "back_pointer": "0x5AB9",
+      "front": {"bank":"0x09","rom_offset":"0x2599E","width":40,"height":40,"pixel_sha256":"fcd45fb8c1b12467500143990454fddfab5fa2538e0f12defa15c365a91f9253","rev_a_pixel_sha256":"fcd45fb8c1b12467500143990454fddfab5fa2538e0f12defa15c365a91f9253","identical_rev0_reva":true,"png":"gfx/pokemon/front/088_grimer.png","png_sha256":"f943a4aa47531fe5e8066c1ef15d701e41fc6dae2fe9923957b4296c82d2cc75"},
+      "back": {"bank":"0x09","rom_offset":"0x25AB9","width":32,"height":32,"pixel_sha256":"2517f6a1605f71d129c22f34ea408356b9d532aecce0644c2c390f7ec4bd8cda","rev_a_pixel_sha256":"2517f6a1605f71d129c22f34ea408356b9d532aecce0644c2c390f7ec4bd8cda","identical_rev0_reva":true,"png":"gfx/pokemon/back/088_grimer.png","png_sha256":"6ed2342cb709f2d8b6cb4501b6e08f5db9ffedbfbc895b220f7b68942ba2e6f7"},
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 89,
+      "name": "muk",
+      "base_stats_offset": "0x389A0",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x5D3F",
+      "back_pointer": "0x5F1F",
+      "front": {"bank":"0x0C","rom_offset":"0x31D3F","width":56,"height":56,"pixel_sha256":"5736975c4b60a3dcd9e31caebbfc574bfc0f1f3fc931fea0664ad7dab5c8c4b7","rev_a_pixel_sha256":"5736975c4b60a3dcd9e31caebbfc574bfc0f1f3fc931fea0664ad7dab5c8c4b7","identical_rev0_reva":true,"png":"gfx/pokemon/front/089_muk.png","png_sha256":"febbb50bec3b78d885159b4d9405ae5549c77909d59b587b79ccf589589077eb"},
+      "back": {"bank":"0x0C","rom_offset":"0x31F1F","width":32,"height":32,"pixel_sha256":"3366ab4b2e09f4bf64d778db3bd118e4a2331088c89a45d4cc5caf89171ff4f0","rev_a_pixel_sha256":"3366ab4b2e09f4bf64d778db3bd118e4a2331088c89a45d4cc5caf89171ff4f0","identical_rev0_reva":true,"png":"gfx/pokemon/back/089_muk.png","png_sha256":"abc9a6cbed769436bbfdaca77eeb39ac364541f1289ce4f921adba161014c57f"},
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 90,
+      "name": "shellder",
+      "base_stats_offset": "0x389BC",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x6D45",
+      "back_pointer": "0x6E12",
+      "front": {"bank":"0x09","rom_offset":"0x26D45","width":40,"height":40,"pixel_sha256":"de7c6ea33e6ab47aa83352c1b6ad2813a1cdb4145006a69de42c9e76c478f0ac","rev_a_pixel_sha256":"de7c6ea33e6ab47aa83352c1b6ad2813a1cdb4145006a69de42c9e76c478f0ac","identical_rev0_reva":true,"png":"gfx/pokemon/front/090_shellder.png","png_sha256":"4eb686c471b6e65af42d1da9d358e13a97d8a27554f1f7a843e95c39a16d8d28"},
+      "back": {"bank":"0x09","rom_offset":"0x26E12","width":32,"height":32,"pixel_sha256":"c961e70a8b57515a5ab7b985f6081e63082a1b66f41fea571b0142648eeb0edc","rev_a_pixel_sha256":"c961e70a8b57515a5ab7b985f6081e63082a1b66f41fea571b0142648eeb0edc","identical_rev0_reva":true,"png":"gfx/pokemon/back/090_shellder.png","png_sha256":"e15e26d63699dddaf024befe5fa4b6215d65de8cc4eab246871387e2e3fa8555"},
+      "base_stats_identical_rev0_reva": true
+    }
+  ]
+}
