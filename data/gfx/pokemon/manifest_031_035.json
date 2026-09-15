@@ -1,0 +1,165 @@
+{
+  "source_roms": {
+    "rev0_sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+    "reva_sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b"
+  },
+  "batch": "pokemon_031_035",
+  "deduplication": "Identical decoded pixel data across revisions is stored once; revision membership is recorded in metadata.",
+  "entries": [
+    {
+      "dex": 31,
+      "name": "nidoqueen",
+      "base_stats_offset": "0x38348",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x5E54",
+      "back_pointer": "0x6061",
+      "front": {
+        "bank": "0x09",
+        "rom_offset": "0x25E54",
+        "width": 56,
+        "height": 56,
+        "pixel_sha256": "81068f932d5424a3d8b65c1a93f69c4e856a24d4f3c96a3f8410c54a4171e78d",
+        "rev_a_pixel_sha256": "81068f932d5424a3d8b65c1a93f69c4e856a24d4f3c96a3f8410c54a4171e78d",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/031_nidoqueen.png",
+        "png_sha256": "29599753e62da39489b4eb854b98da26c385f8b4a5649385f02ea69b3a34b380"
+      },
+      "back": {
+        "bank": "0x09",
+        "rom_offset": "0x26061",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "8c4d1d12d1b371a84f6e0cfeec2a978632f16cfee2cc2fc82c53bb9f230506c2",
+        "rev_a_pixel_sha256": "8c4d1d12d1b371a84f6e0cfeec2a978632f16cfee2cc2fc82c53bb9f230506c2",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/031_nidoqueen.png",
+        "png_sha256": "a4f1caa977ec8ff862587e082968a9e98b9d4b727cbcfc9cb9a39f58ded4c0d4"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 32,
+      "name": "nidoran_m",
+      "base_stats_offset": "0x38364",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x457F",
+      "back_pointer": "0x466A",
+      "front": {
+        "bank": "0x09",
+        "rom_offset": "0x2457F",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "22c9d7895cd094eb89e0e9596532f8da99737c083dfe3736dcbe4dc481496e8b",
+        "rev_a_pixel_sha256": "22c9d7895cd094eb89e0e9596532f8da99737c083dfe3736dcbe4dc481496e8b",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/032_nidoran_m.png",
+        "png_sha256": "c683284f0e575cf0416de0fb590fbcb6f3da965c760cac00bf63db5e13a22472"
+      },
+      "back": {
+        "bank": "0x09",
+        "rom_offset": "0x2466A",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "548d3681618f215c79d5ea031966858851be78dbe7dc9c36f5ffcd7796a95c71",
+        "rev_a_pixel_sha256": "548d3681618f215c79d5ea031966858851be78dbe7dc9c36f5ffcd7796a95c71",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/032_nidoran_m.png",
+        "png_sha256": "c36f89e0f906ca70924c4760c916e08c5687d8fa6d3aa08374bdbb8e02a44a01"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 33,
+      "name": "nidorino",
+      "base_stats_offset": "0x38380",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x519C",
+      "back_pointer": "0x531B",
+      "front": {
+        "bank": "0x0D",
+        "rom_offset": "0x3519C",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "2031cde123455e8b7669b9a93fe9e5fcad2b991f2e5765525cbc3ab81e428ba1",
+        "rev_a_pixel_sha256": "2031cde123455e8b7669b9a93fe9e5fcad2b991f2e5765525cbc3ab81e428ba1",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/033_nidorino.png",
+        "png_sha256": "65b08e32172c8b866b7e36dab0b166267d165997e5c6eb6ef7d2a17100849215"
+      },
+      "back": {
+        "bank": "0x0D",
+        "rom_offset": "0x3531B",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "0de29fe733ed6b95136d50d29919378e844a05014204be134b422a131c8a240b",
+        "rev_a_pixel_sha256": "0de29fe733ed6b95136d50d29919378e844a05014204be134b422a131c8a240b",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/033_nidorino.png",
+        "png_sha256": "4a4cfe2701140cb33093673d5ca383b8a32d66234dd9856a51c3b545cd1264d8"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 34,
+      "name": "nidoking",
+      "base_stats_offset": "0x3839C",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x4A16",
+      "back_pointer": "0x4C6B",
+      "front": {
+        "bank": "0x09",
+        "rom_offset": "0x24A16",
+        "width": 56,
+        "height": 56,
+        "pixel_sha256": "2e250895953380f50fcaf97c4cc9e9eaa984e6c627cc2476e66e963d2dfd5d07",
+        "rev_a_pixel_sha256": "2e250895953380f50fcaf97c4cc9e9eaa984e6c627cc2476e66e963d2dfd5d07",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/034_nidoking.png",
+        "png_sha256": "6f1c64a4bdef1d3ff2fc6516dc26695e2d2c19cf070adfb087a1ac0873b12e4c"
+      },
+      "back": {
+        "bank": "0x09",
+        "rom_offset": "0x24C6B",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "e8af2ae979b276246ddf3b76114be086c6729b4ef6775a3769036e75727652e2",
+        "rev_a_pixel_sha256": "e8af2ae979b276246ddf3b76114be086c6729b4ef6775a3769036e75727652e2",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/034_nidoking.png",
+        "png_sha256": "8cd4b8caaf7264a913e41b01c6ed0dbc22e6d2bc38936a7849f76ad01d326055"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 35,
+      "name": "clefairy",
+      "base_stats_offset": "0x383B8",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x46C9",
+      "back_pointer": "0x47A4",
+      "front": {
+        "bank": "0x09",
+        "rom_offset": "0x246C9",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "92c32398350524d5451570f0de2463540b7af43c70d7bf4af5df8a070e0692f7",
+        "rev_a_pixel_sha256": "92c32398350524d5451570f0de2463540b7af43c70d7bf4af5df8a070e0692f7",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/035_clefairy.png",
+        "png_sha256": "fe7b26339ecbbb748c953d69e590b5d593960d831658875686603d0d53c1ecaa"
+      },
+      "back": {
+        "bank": "0x09",
+        "rom_offset": "0x247A4",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "c20667b0f2ef7dc8485f639032a853328c3a35e4c3d5463c17b068fab0660607",
+        "rev_a_pixel_sha256": "c20667b0f2ef7dc8485f639032a853328c3a35e4c3d5463c17b068fab0660607",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/035_clefairy.png",
+        "png_sha256": "6ed682137cf7ba51e42e34c3546e04a51aea40a5e20024bb47a48ef3990a4b9e"
+      },
+      "base_stats_identical_rev0_reva": true
+    }
+  ]
+}

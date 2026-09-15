@@ -1,0 +1,165 @@
+{
+  "source_roms": {
+    "rev0_sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+    "reva_sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b"
+  },
+  "batch": "pokemon_026_030",
+  "deduplication": "Identical decoded pixel data across revisions is stored once; revision membership is recorded in metadata.",
+  "entries": [
+    {
+      "dex": 26,
+      "name": "raichu",
+      "base_stats_offset": "0x382BC",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x4E46",
+      "back_pointer": "0x5020",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2CE46",
+        "width": 56,
+        "height": 56,
+        "pixel_sha256": "5ee26e4248d5e1cdd8d6ffaaeacdc20ee2f4f48921ad67c2818771c1155b1d7c",
+        "rev_a_pixel_sha256": "5ee26e4248d5e1cdd8d6ffaaeacdc20ee2f4f48921ad67c2818771c1155b1d7c",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/026_raichu.png",
+        "png_sha256": "f655d75314180bdefe115d171b37b225c47eed6c976a65143247af1a452a7381"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2D020",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "c286bfe32cfa13678ac8c34738b77497af9ebb308bed3005db7bf14700ee5a0f",
+        "rev_a_pixel_sha256": "c286bfe32cfa13678ac8c34738b77497af9ebb308bed3005db7bf14700ee5a0f",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/026_raichu.png",
+        "png_sha256": "2235bd279fda4440da1dde8871e50cf20dd30e499047c3830b4961e04117d421"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 27,
+      "name": "sandshrew",
+      "base_stats_offset": "0x382D8",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x59C9",
+      "back_pointer": "0x5AC5",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2D9C9",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "e7b723a589c98ef7f28e3195e8ee60b0eefb86d4f91753293da8aedb209b418a",
+        "rev_a_pixel_sha256": "e7b723a589c98ef7f28e3195e8ee60b0eefb86d4f91753293da8aedb209b418a",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/027_sandshrew.png",
+        "png_sha256": "e128e023d9ee4b51c2dece878e99f01ec91bf0fa90c516a6533f53ea08a7cf58"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2DAC5",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "b171c541544e3c2a15447bdab492c7ef162ab7ba90f24a8ec123ea0de1c93cc5",
+        "rev_a_pixel_sha256": "b171c541544e3c2a15447bdab492c7ef162ab7ba90f24a8ec123ea0de1c93cc5",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/027_sandshrew.png",
+        "png_sha256": "b0c102e6ac4adbd7186644dc332fae3c232a0924efa12e46e5a2643086dbec8e"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 28,
+      "name": "sandslash",
+      "base_stats_offset": "0x382F4",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x5B49",
+      "back_pointer": "0x5D11",
+      "front": {
+        "bank": "0x0B",
+        "rom_offset": "0x2DB49",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "f3700ead9fd964bae34ddd26643ab1bbc87c048eeedc3241090d00cc78ba5a40",
+        "rev_a_pixel_sha256": "f3700ead9fd964bae34ddd26643ab1bbc87c048eeedc3241090d00cc78ba5a40",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/028_sandslash.png",
+        "png_sha256": "23d4510a0fdd58586e3ad9c361039afdaf53366b572211edc98927dd16aea533"
+      },
+      "back": {
+        "bank": "0x0B",
+        "rom_offset": "0x2DD11",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "12899b43e4deeeb7fe17f3fb2ac6d31c36849f75726868259f9201b0f4eb0b49",
+        "rev_a_pixel_sha256": "12899b43e4deeeb7fe17f3fb2ac6d31c36849f75726868259f9201b0f4eb0b49",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/028_sandslash.png",
+        "png_sha256": "9bf057ce6db35033897e6fdde2962ae54e6019bc73389598c47ab844adc643b0"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 29,
+      "name": "nidoran_f",
+      "base_stats_offset": "0x38310",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x5D36",
+      "back_pointer": "0x5E0D",
+      "front": {
+        "bank": "0x09",
+        "rom_offset": "0x25D36",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "07583c0a732a92b293ea422c81225eb74e18c8eb9a0300f1992897a063b27267",
+        "rev_a_pixel_sha256": "07583c0a732a92b293ea422c81225eb74e18c8eb9a0300f1992897a063b27267",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/029_nidoran_f.png",
+        "png_sha256": "af594ec055783626632717898c448fb22a79a7cf1a7d537fba521aece10d6d41"
+      },
+      "back": {
+        "bank": "0x09",
+        "rom_offset": "0x25E0D",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "d4e80bc63ee718f3f59911e1007aaabf8a32a2ed232b1e110ab6808380704825",
+        "rev_a_pixel_sha256": "d4e80bc63ee718f3f59911e1007aaabf8a32a2ed232b1e110ab6808380704825",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/029_nidoran_f.png",
+        "png_sha256": "393582cffbb021616d48175dd4971100eaac0f3e39be60c7f04ffe867f83b0db"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 30,
+      "name": "nidorina",
+      "base_stats_offset": "0x3832C",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x53B6",
+      "back_pointer": "0x5522",
+      "front": {
+        "bank": "0x0D",
+        "rom_offset": "0x353B6",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "6fe6d93e2b387b854b5c0593c9958c6a17970d6dc464b9bedf77eb0867f7399a",
+        "rev_a_pixel_sha256": "6fe6d93e2b387b854b5c0593c9958c6a17970d6dc464b9bedf77eb0867f7399a",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/030_nidorina.png",
+        "png_sha256": "982aa592485098575c5d1296f007ae5d5b6f869a834009513fd20f33134eebe4"
+      },
+      "back": {
+        "bank": "0x0D",
+        "rom_offset": "0x35522",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "26997d4dc16a83766f5808d52a278a57de4a17190664bc41cd5be2ec667880bf",
+        "rev_a_pixel_sha256": "26997d4dc16a83766f5808d52a278a57de4a17190664bc41cd5be2ec667880bf",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/030_nidorina.png",
+        "png_sha256": "c293c5f6a28570102a04e438c35660ef5a8a88bbec5ec84bd10ae57585d1c3f6"
+      },
+      "base_stats_identical_rev0_reva": true
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  source-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Midori disassembly
+        uses: actions/checkout@v7
+
+      - name: Checkout RGBDS 1.0.3
+        uses: actions/checkout@v7
+        with:
+          repository: gbdev/rgbds
+          ref: v1.0.3
+          path: rgbds
+
+      - name: Install RGBDS
+        working-directory: rgbds
+        run: |
+          sudo apt-get update
+          sudo apt-get install -yq bison libpng-dev pkg-config
+          sudo make -j$(nproc) install
+
+      - name: Assemble both Midori revisions
+        run: make check-source

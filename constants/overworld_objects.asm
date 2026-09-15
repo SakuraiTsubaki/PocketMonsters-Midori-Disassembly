@@ -1,0 +1,16 @@
+; Sign/NPC interaction symbols verified from Bank 00.
+
+DEF wSpritePlayerStateData1FacingDirection EQU $C109
+DEF wSprite01StateData1 EQU $C110
+
+DEF wNumSigns EQU $D42F
+DEF wSignCoords EQU $D430
+DEF wSignTextIDs EQU $D450
+DEF wTilesetTalkingOverTiles EQU $D4B1
+
+DEF SPRITE_FACING_DOWN EQU $00
+DEF SPRITE_FACING_UP EQU $04
+DEF SPRITE_FACING_LEFT EQU $08
+DEF SPRITE_FACING_RIGHT EQU $0C
+
+DEF BIT_FACE_PLAYER EQU 7

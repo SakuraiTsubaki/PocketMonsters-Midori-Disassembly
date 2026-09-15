@@ -1,0 +1,165 @@
+{
+  "source_roms": {
+    "rev0_sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+    "reva_sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b"
+  },
+  "batch": "pokemon_016_020",
+  "deduplication": "Identical decoded pixel data across revisions is stored once; revision membership is recorded in metadata.",
+  "entries": [
+    {
+      "dex": 16,
+      "name": "pidgey",
+      "base_stats_offset": "0x381A4",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x4647",
+      "back_pointer": "0x4713",
+      "front": {
+        "bank": "0x0A",
+        "rom_offset": "0x28647",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "5f20f86b76c15e2520bb54dac024fb73e510e554c02f8008e150058eafcdba62",
+        "rev_a_pixel_sha256": "5f20f86b76c15e2520bb54dac024fb73e510e554c02f8008e150058eafcdba62",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/016_pidgey.png",
+        "png_sha256": "672dadf6ad324a147bb3cc0131dabeaf4deb1a856068f9002ad52f163473b0c2"
+      },
+      "back": {
+        "bank": "0x0A",
+        "rom_offset": "0x28713",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "e9f56e3dac4de81b4589c7e3f82e9a205f30e172dee3db3b97765081f2ae80e6",
+        "rev_a_pixel_sha256": "e9f56e3dac4de81b4589c7e3f82e9a205f30e172dee3db3b97765081f2ae80e6",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/016_pidgey.png",
+        "png_sha256": "3397595cdcac8db174c6641fed8251a620ab31bd5ab4a8d885a599022f343d53"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 17,
+      "name": "pidgeotto",
+      "base_stats_offset": "0x381C0",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x761E",
+      "back_pointer": "0x77C8",
+      "front": {
+        "bank": "0x0C",
+        "rom_offset": "0x3361E",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "a021ef142b4d827ce1591afab77e036597158e227b4bde76bae8118119236dd6",
+        "rev_a_pixel_sha256": "a021ef142b4d827ce1591afab77e036597158e227b4bde76bae8118119236dd6",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/017_pidgeotto.png",
+        "png_sha256": "b5b2f5d50d1d6e1324b59f0e459ddc2f36d235a51b145f62044bbc001240c54d"
+      },
+      "back": {
+        "bank": "0x0C",
+        "rom_offset": "0x337C8",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "54609115240a3813148be2eab0a7c1349d128057c251fd8d9d7f7386b6dae772",
+        "rev_a_pixel_sha256": "54609115240a3813148be2eab0a7c1349d128057c251fd8d9d7f7386b6dae772",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/017_pidgeotto.png",
+        "png_sha256": "8f5d4ad0d0b9be10540e3ab56025d3fd67b2f92f782e769dda3e83b7350cab60"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 18,
+      "name": "pidgeot",
+      "base_stats_offset": "0x381DC",
+      "dimensions_byte": "0x77",
+      "front_pointer": "0x782F",
+      "back_pointer": "0x7A56",
+      "front": {
+        "bank": "0x0C",
+        "rom_offset": "0x3382F",
+        "width": 56,
+        "height": 56,
+        "pixel_sha256": "977159af451c13c10fe2bdd3f07365d680b3910003e1789f0b06ad33f4ca43a1",
+        "rev_a_pixel_sha256": "977159af451c13c10fe2bdd3f07365d680b3910003e1789f0b06ad33f4ca43a1",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/018_pidgeot.png",
+        "png_sha256": "0dee5e6b0508d81922932c8a133df3c69168eb8b2409d62c30073f87a827ff26"
+      },
+      "back": {
+        "bank": "0x0C",
+        "rom_offset": "0x33A56",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "c4aadcf09bac19d894ea559b1e05c81f76e2b42a168e22642779b362a374cf57",
+        "rev_a_pixel_sha256": "c4aadcf09bac19d894ea559b1e05c81f76e2b42a168e22642779b362a374cf57",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/018_pidgeot.png",
+        "png_sha256": "2d196820d2a75a36312313524dec851bd8cb6a0925b72e07ce5e2af7fe4e48ea"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 19,
+      "name": "rattata",
+      "base_stats_offset": "0x381F8",
+      "dimensions_byte": "0x55",
+      "front_pointer": "0x4EBC",
+      "back_pointer": "0x4F7A",
+      "front": {
+        "bank": "0x0D",
+        "rom_offset": "0x34EBC",
+        "width": 40,
+        "height": 40,
+        "pixel_sha256": "9d74b75d3415193ffbcd82bf05ec65e6f5ed7510fe6009e6da17151fda1b0f28",
+        "rev_a_pixel_sha256": "9d74b75d3415193ffbcd82bf05ec65e6f5ed7510fe6009e6da17151fda1b0f28",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/019_rattata.png",
+        "png_sha256": "d00594377b2b21458a87d6b808be7d3686c3c5c2749b3b01634c4b33e80fa68a"
+      },
+      "back": {
+        "bank": "0x0D",
+        "rom_offset": "0x34F7A",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "9ae1840741751474238d18a6cc319b703804596067a4bbe08bf5c27b9d114786",
+        "rev_a_pixel_sha256": "9ae1840741751474238d18a6cc319b703804596067a4bbe08bf5c27b9d114786",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/019_rattata.png",
+        "png_sha256": "aa8e2f8ac2d6d98b39b1fff9e5918ad38c7e8fa38af335163e64d7eb99bd675f"
+      },
+      "base_stats_identical_rev0_reva": true
+    },
+    {
+      "dex": 20,
+      "name": "raticate",
+      "base_stats_offset": "0x38214",
+      "dimensions_byte": "0x66",
+      "front_pointer": "0x4FB3",
+      "back_pointer": "0x5127",
+      "front": {
+        "bank": "0x0D",
+        "rom_offset": "0x34FB3",
+        "width": 48,
+        "height": 48,
+        "pixel_sha256": "9b9641d68018bdc34777d890fbebb362f7650c6447e2c6f8172b8ac411b5e964",
+        "rev_a_pixel_sha256": "9b9641d68018bdc34777d890fbebb362f7650c6447e2c6f8172b8ac411b5e964",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/front/020_raticate.png",
+        "png_sha256": "6aa608d78e50160a23aad0a6b8f85740d38a9a616dfdd4d8eb88d4ee995bb5e3"
+      },
+      "back": {
+        "bank": "0x0D",
+        "rom_offset": "0x35127",
+        "width": 32,
+        "height": 32,
+        "pixel_sha256": "3a056d979c03735c85db453e41a721cba9856df47c6173e89063a562b9889f77",
+        "rev_a_pixel_sha256": "3a056d979c03735c85db453e41a721cba9856df47c6173e89063a562b9889f77",
+        "identical_rev0_reva": true,
+        "png": "gfx/pokemon/back/020_raticate.png",
+        "png_sha256": "96cb40ba8a07432e80132af7755ffc52a6cbb0b94e838b56b5358e5619e12671"
+      },
+      "base_stats_identical_rev0_reva": true
+    }
+  ]
+}

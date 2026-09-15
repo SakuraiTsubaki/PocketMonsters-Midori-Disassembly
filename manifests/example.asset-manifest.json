@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "asset",
+  "asset_id": "TBD",
+  "repository_path": "TBD",
+  "category": "TBD",
+  "target": {"game": "TBD", "region": "TBD", "language": "TBD", "revision": "TBD"},
+  "source": {"bank": null, "section": null, "address": null, "offset": null, "range": null, "table_index": null, "symbol": null, "archive_path": null},
+  "representation": {"format": "TBD", "size_bytes": null, "sha256": null},
+  "generation": {"tool": null, "command": null},
+  "verification": "Unverified",
+  "shared_with": [],
+  "notes": "Replace placeholders only with verified information."
+}
