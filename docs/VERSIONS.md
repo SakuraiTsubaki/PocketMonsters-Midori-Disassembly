@@ -1,9 +1,9 @@
 # Version Coverage
 
-This document is the authoritative index for supported and researched targets. Add only verified release information.
+Version and revision coverage has not yet been established for the clean baseline.
 
-| Target ID | Title / release | Region | Language | Revision / release | Size | Hashes | Support status | Notes |
-| --- | --- | --- | --- | --- | ---: | --- | --- | --- |
-| TBD | TBD | TBD | TBD | TBD | — | TBD | Unverified | Populate from verified project evidence |
+| Target ID | Region | Language | Revision / release | Hashes | Status |
+| --- | --- | --- | --- | --- | --- |
+| TBD | TBD | TBD | TBD | TBD | Not inventoried |
 
-Do not merge distinct revisions merely because titles match. Use `TBD` or `unknown` rather than inventing missing metadata.
+Do not infer equivalence from title or appearance alone. Confirm identity with reproducible metadata and hashes where available.

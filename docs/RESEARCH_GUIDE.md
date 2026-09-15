@@ -1,9 +1,7 @@
 # Research Guide
 
-Record the exact target associated with a technical claim. Useful evidence can include bank/section, address, file offset, symbol, table index, hash, byte comparison, build log, extraction command, or independently reproducible behavior.
+Record the exact target whenever differences may matter: game version, revision, region, language, release, bank, section, address, archive/member, or other stable locator.
 
-Keep hypotheses clearly separate from confirmed observations. Prefer stable descriptive names for confirmed behavior; mark provisional names explicitly.
+Confidence levels: **Hypothesis**, **Observed**, **Reproduced**, and **Matched**.
 
-When findings differ between revisions, regions, or languages, preserve those differences. Shared behavior should be shared only when evidence supports it.
-
-For graphics, sprites, text, maps, audio, and other assets, record provenance and use hashes/byte comparison before deduplicating apparently identical variants. Include reviewable PNGs for sprite/graphics work when practical.
+Preserve commands, tools, hashes, offsets, symbols, public references, or other evidence needed to reproduce important findings. Use `unknown` or `TBD` instead of invented metadata.

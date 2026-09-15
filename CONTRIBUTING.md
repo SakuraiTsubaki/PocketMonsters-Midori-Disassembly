@@ -1,15 +1,12 @@
 # Contributing
 
-Contributions should improve the accuracy, readability, reproducibility, or documentation of the disassembly without obscuring target-specific differences.
+Contributions should improve reproducible disassembly, source reconstruction, research, tooling, documentation, or verification.
 
-- Identify the relevant game version, region, language, revision, or release when target-specific.
-- Separate verified findings from hypotheses.
-- Preserve real revision/localization differences.
-- Prefer small, reviewable commits.
-- Record commands, offsets, symbols, hashes, or other evidence when practical.
-- Keep generated data reproducible where practical.
-- Do not commit retail or rebuilt ROM images, console keys, or other redistributable game binaries.
+- Identify the exact target version/revision when differences may exist.
+- Separate confirmed observations from hypotheses.
+- Preserve provenance for extracted, reconstructed, converted, or generated material.
+- Prefer editable source and reproducible tools over opaque generated output.
+- Record verification evidence and hashes when practical.
+- Keep retail ROM images and equivalent complete game images out of the repository.
 
-For graphics and sprite work, include human-viewable PNGs alongside reconstructed graphics source when practical, and verify byte/hash identity before deduplicating shared assets.
-
-See `docs/README.md`, `docs/DISASSEMBLY_STANDARDS.md`, `docs/BUILD_AND_MATCHING.md`, and `docs/VERIFICATION.md`.
+Use focused commits and describe why a change is correct, not only what changed.

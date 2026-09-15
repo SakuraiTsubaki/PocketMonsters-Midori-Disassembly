@@ -1,16 +1,19 @@
 # Roadmap
 
-## Phase 1 — Target inventory
-Identify supported releases, regions, languages, revisions, sizes, hashes, and required tools.
+## Phase 1 — Baseline inventory
+Identify supported versions, regions, languages, revisions, releases, and hashes.
 
-## Phase 2 — Layout and source mapping
-Map banks, sections, ranges, tables, symbols, and asset regions; distinguish shared and target-specific material.
+## Phase 2 — Architecture mapping
+Map ROM layout, banks/sections, executable regions, data structures, pointers, and target-specific organization.
 
-## Phase 3 — Structured reconstruction
-Replace understood opaque/raw regions with readable assembly or editable data while preserving revision/localization differences.
+## Phase 3 — Source reconstruction
+Reconstruct code, data, scripts, text, and formats into readable and editable source.
 
-## Phase 4 — Reproducible build
-Build from documented source and tools, localize mismatches, and keep reproducible checksums/comparison evidence.
+## Phase 4 — Assets and systems
+Document and reconstruct graphics, audio, maps, UI, events, and other systems with provenance.
 
-## Phase 5 — Matching and stabilization
-Satisfy exact-match criteria for supported targets and keep tests, manifests, docs, and status synchronized.
+## Phase 5 — Build and verification
+Add reproducible tooling, regression checks, and exact or criterion-based matching where appropriate.
+
+## Phase 6 — Coverage expansion
+Expand across verified regional, language, revision, or release differences without flattening meaningful variants.

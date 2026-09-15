@@ -1,28 +1,38 @@
-* text=auto
+# Normalize text files across platforms
+* text=auto eol=lf
 
-*.asm text eol=lf
-*.inc text eol=lf
 *.md text eol=lf
 *.txt text eol=lf
-*.csv text eol=lf
-*.json text eol=lf
 *.yml text eol=lf
 *.yaml text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.xml text eol=lf
+*.csv text eol=lf
 *.py text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.s text eol=lf
+*.asm text eol=lf
+*.inc text eol=lf
 *.sh text eol=lf
-Makefile text eol=lf
 *.bat text eol=crlf
 *.cmd text eol=crlf
 
 *.png binary
-*.gif binary
 *.jpg binary
 *.jpeg binary
+*.gif binary
 *.webp binary
+*.bmp binary
 *.wav binary
 *.flac binary
 *.ogg binary
+*.mp3 binary
 *.zip binary
 *.7z binary
 *.gz binary
+*.bz2 binary
 *.xz binary

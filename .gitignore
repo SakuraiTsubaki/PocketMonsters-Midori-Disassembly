@@ -1,21 +1,45 @@
-# Reconstructed ROM outputs
+# Retail game images / dumps
 *.gb
 *.gbc
+*.gba
+*.nds
+*.3ds
+*.cia
+*.cci
+*.cxi
+*.nsp
+*.xci
+*.nca
+*.iso
+*.gcm
+*.rvz
+*.wbfs
+baserom.*
+baserom_*
+original_rom.*
 
-# Emulator / save data
-*.sav
-*.rtc
-*.srm
+# Keys and sensitive console material
+prod.keys
+title.keys
+*.keys
+keys/
 
-# Build products
+# Local dumps and scratch data
+dump/
+dumps/
+.local/
+.cache/
+
+# Build output
 build/
-obj/
-*.o
-*.map
-*.sym
-*.patch
+out/
+dist/
 
-# Local tooling caches
+# Python caches
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+
+# IDE / OS clutter
+.idea/
+.DS_Store
+Thumbs.db

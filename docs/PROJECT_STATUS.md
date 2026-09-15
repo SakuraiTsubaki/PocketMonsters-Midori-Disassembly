@@ -1,15 +1,21 @@
 # Project Status
 
-This file summarizes target coverage, reconstruction stage, and matching status. Detailed historical progress may also live in game-specific research files and the root README.
+## Current stage
 
-## Shared milestones
+**Initial setup**
 
-- [ ] Target inventory is authoritative
-- [ ] Source/build toolchain is documented
-- [ ] Major code/data regions are mapped
-- [ ] Structured source replaces understood opaque/raw regions
-- [ ] Graphics/text/audio/maps/scripts are reconstructed where applicable
-- [ ] Build outputs are verified by bank/section/range or equivalent
-- [ ] Supported targets reach defined exact-match criteria
+The repository baseline is established. Game-specific disassembly and source reconstruction should begin only from verified target evidence.
 
-Use the terminology from `VERIFICATION.md`: **Unverified**, **Observed**, **Reconstructed**, and **Matched**.
+| Area | Status |
+| --- | --- |
+| Version/revision inventory | Not started |
+| ROM / bank / section mapping | Not started |
+| Code reconstruction | Not started |
+| Data reconstruction | Not started |
+| Scripts / events | Not started |
+| Graphics / assets | Not started |
+| Audio / resources | Not started |
+| Maps / world data | Not started |
+| Build / matching verification | Not started |
+
+Next milestone: establish the baseline version/revision inventory and map the verified target architecture.

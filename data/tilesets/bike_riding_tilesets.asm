@@ -1,7 +1,0 @@
-BikeRidingTilesets::
-    db TILESET_OVERWORLD
-    db TILESET_FOREST
-    db TILESET_UNDERGROUND
-    db TILESET_SHIP_PORT
-    db TILESET_CAVERN
-    db $FF

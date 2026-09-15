@@ -1,62 +1,66 @@
-# PocketMonsters-Midori-Disassembly
+# Pocket Monsters Midori — Disassembly
 
-![Status](https://img.shields.io/badge/status-in_progress-yellow)
+![Status](https://img.shields.io/badge/status-initial_setup-lightgrey)
 ![Project](https://img.shields.io/badge/project-disassembly-blue)
 ![ROMs](https://img.shields.io/badge/ROM_binaries-not_included-success)
 
-Disassembly of Japanese Pocket Monsters Midori (Green), supporting Rev 0 and Rev A with source, graphics, text, audio, maps, and data for byte-exact ROM reconstruction.
+Disassembly and source-reconstruction project for **Pocket Monsters Midori / Pokémon Green**.
 
-## Research restart — 2026-09-14
+## 🎯 Goals
 
-The current research environment has **no local retail ROM images available**. Work therefore proceeds from publicly accessible evidence: public disassemblies and source reconstructions, repository history, official material, technical documentation, maps, graphics, text, audio, release metadata, glitch/unused-data research, archives, and other attributable public sources.
+- Reconstruct game code and data into readable, editable assembly/source form.
+- Document ROM, bank, section, data, script, asset, and version differences.
+- Keep analysis, tooling, metadata, and documentation reproducible.
+- Build a clean foundation for long-term reverse-engineering work.
 
-The governing scope is **Japanese releases as the historical origin point, followed by an exhaustive survey of all regional, language, revision, and official re-release variants**. Existing repository claims and earlier analysis are retained as evidence, but are revalidated rather than automatically trusted.
+## 🚧 Status
 
-Current restart ledgers:
+This repository is in its **initial setup** stage. Source reconstruction and documentation will be added progressively.
 
-- [`docs/PUBLIC_SOURCE_CENSUS.md`](docs/PUBLIC_SOURCE_CENSUS.md) — public-source evidence registry and search frontier.
-- [`docs/PUBLIC_GITHUB_CRAWL_2026-09-14.md`](docs/PUBLIC_GITHUB_CRAWL_2026-09-14.md) — repository/branch/fork discovery and classification queue.
+## 🗂️ Planned scope
 
-Any older references to locally available source ROMs or direct byte comparisons record an earlier analysis state and **do not describe the currently available inputs**.
+- ROM, bank, section, and code analysis
+- Game data structures
+- Scripts and event data
+- Graphics and asset metadata
+- Audio and resource formats
+- Maps and world data
+- Tools, notes, manifests, and verification data
 
-## Goal
+## 📌 Repository policy
 
-Reconstruct both Japanese Midori revisions from repository contents alone, without requiring an original ROM as a build input. Generated ROM binaries are build outputs and are not committed.
+ROM images and redistributed ROM binaries are **not included**. The repository is intended for reconstructed source, extracted/recreated project data, tooling, analysis, and documentation.
 
-## Baseline ROMs
+## 🧭 Roadmap
 
-| Revision | Size | Banks | Header version | SHA-1 |
-| --- | ---: | ---: | ---: | --- |
-| Rev 0 | 524,288 bytes | 32 | `0x00` | `82c0eef40a5e2423699d9fd8ba15dfaa8b51d196` |
-| Rev A | 524,288 bytes | 32 | `0x01` | `4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b` |
-
-The two revisions differ at 46,168 byte positions, so revision handling must cover real code/data differences rather than only header metadata.
-
-See [`docs/ROM_BASELINES.md`](docs/ROM_BASELINES.md) for verified metadata and [`docs/DISASSEMBLY_PLAN.md`](docs/DISASSEMBLY_PLAN.md) for the working roadmap.
-
-## Target source layout
-
-```text
-constants/   macros/      hardware/
-home/        engine/      data/
-maps/        text/        gfx/
-audio/       ram/         revisions/
-tools/       docs/
-```
-
-The intended end state is an editable semantic disassembly: graphics, Japanese text, audio, maps, game data and executable code are restored into source-oriented formats and assembled back into byte-exact Rev 0 / Rev A ROM images.
+- [ ] Establish baseline version/revision inventory
+- [ ] Map ROM, bank, section, and data structures
+- [ ] Begin source reconstruction
+- [ ] Document assets, scripts, and formats
+- [ ] Add build, matching, verification, and reproducibility workflow
 
 ## 📚 Documentation
 
 | Document | Purpose |
 | --- | --- |
-| [Documentation Hub](docs/README.md) | Central entry point for project documentation |
-| [Project Status](docs/PROJECT_STATUS.md) | Reconstruction and matching status |
-| [Version Coverage](docs/VERSIONS.md) | Supported releases, revisions, sizes, and hashes |
-| [Disassembly Standards](docs/DISASSEMBLY_STANDARDS.md) | Source reconstruction and provenance standards |
-| [Project Standards](docs/PROJECT_STANDARDS.md) | Naming, assets, manifests, provenance, and repository-wide conventions |
-| [Build and Matching](docs/BUILD_AND_MATCHING.md) | Reproducible build and exact-match workflow |
-| [Verification](docs/VERIFICATION.md) | Evidence levels and matching criteria |
-| [Asset Workflow](docs/ASSET_WORKFLOW.md) | Graphics, sprites, deduplication, manifests, and review batches |
-| [Manifest Guide](manifests/README.md) | Manifest conventions and reusable asset-manifest example |
-| [Contributing](CONTRIBUTING.md) | Contribution and pull-request guidance |
+| [Project status](docs/PROJECT_STATUS.md) | Current stage, coverage, validation level, and next milestones |
+| [Roadmap](docs/ROADMAP.md) | Recommended disassembly phases and long-term progression |
+| [Version coverage](docs/VERSIONS.md) | Regions, languages, revisions, releases, builds, and hashes |
+| [Research guide](docs/RESEARCH_GUIDE.md) | Evidence, confidence, and research-recording workflow |
+| [Verification guide](docs/VERIFICATION.md) | Standards for Observed, Reproduced, and Matched results |
+| [Repository structure](docs/REPOSITORY_STRUCTURE.md) | Intended long-term source, data, asset, tooling, and manifest layout |
+| [Documentation hub](docs/README.md) | Entry point for format, code, script, asset, version, and verification notes |
+
+## 🧱 Repository structure
+
+As real project material is reconstructed, the repository may grow into areas such as `asm/`, `data/`, `assets/`, `tools/`, `tests/`, and `manifests/`. Empty directory trees are not created only for appearance, and platform-specific structure should follow verified target architecture rather than another generation's layout.
+
+See [Repository Structure](docs/REPOSITORY_STRUCTURE.md) for the full organization policy.
+
+## 🔬 Research and verification
+
+Research findings should identify the relevant target version or revision and clearly separate hypotheses from observed, reproduced, or matched results. Use the repository's Research and Verification issue templates when tracking substantial findings.
+
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution rules, evidence expectations, commit guidance, and pull-request requirements.

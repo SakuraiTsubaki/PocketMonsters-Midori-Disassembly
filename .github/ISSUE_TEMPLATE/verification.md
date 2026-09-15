@@ -1,27 +1,28 @@
 ---
-name: Verification report
-description: Record build, reconstruction, asset, or matching verification
-title: "[Verification] "
-labels: []
-assignees: []
+name: Verification result
+about: Record a reproducibility, build, extraction, or matching result
+title: "verification: "
+labels: verification
 ---
 
 ## Target
-Exact game/version/region/language/revision:
 
-## Material verified
-Function, bank, section, range, asset, build, or other scope:
+Identify the version, revision, region, language, asset, section, or build being verified.
 
-## Method
-Describe the build, hash, byte comparison, test, or reproduction procedure.
+## Verification level
 
-## Result
 - [ ] Observed
-- [ ] Reconstructed
+- [ ] Reproduced
 - [ ] Matched
 
-## Evidence
-Hashes, ranges, logs, commands, diffs, screenshots, or manifest references:
+## Method
 
-## Notes
-Limitations, unresolved mismatches, or follow-up work:
+Describe the command, tool, script, or comparison method.
+
+## Expected result
+
+State the expected hash, bytes, output, or behavior.
+
+## Actual result
+
+Record what was obtained.
