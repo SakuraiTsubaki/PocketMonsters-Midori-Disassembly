@@ -1,8 +1,0 @@
-blank_issues_enabled: false
-contact_links:
-  - name: Research guide
-    url: https://github.com/SakuraiTsubaki/PocketMonsters-Midori-Disassembly/blob/main/docs/RESEARCH_GUIDE.md
-    about: Review evidence and research-recording expectations before opening a research issue.
-  - name: Project status
-    url: https://github.com/SakuraiTsubaki/PocketMonsters-Midori-Disassembly/blob/main/docs/PROJECT_STATUS.md
-    about: Check current project status and milestones.
