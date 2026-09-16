@@ -1,7 +1,9 @@
 # Tools
 
-Target-specific utilities for **Pocket Monsters Midori / Pokémon Green** belong here.
+- `hash_input.py` records local input size, SHA-1, and SHA-256 without copying
+  its contents.
+- `validate_repository.py` checks this target foundation.
 
-Tools must document supported revisions, dependencies, deterministic invocation,
-output formats, and verification. General-purpose utilities should move to the
-shared [Disassembly repository](https://github.com/SakuraiTsubaki/Disassembly).
+Add target-specific deterministic tools here. Promote a tool to
+`SakuraiTsubaki/Disassembly` only after it has a target-neutral contract and
+multi-target tests.

@@ -1,12 +1,13 @@
 # Research
 
-Research for **Pocket Monsters Midori / Pokémon Green** belongs here.
+Research here is specific to **Pocket Monsters Midori / Pokémon Green**. The release matrix starts empty on
+purpose: no hash is accepted without independent verification.
 
-Initial priorities:
+Priorities:
 
-- establish the Rev 0 and Rev A hash baselines;
-- map ROM banks, entry points, and revision deltas;
-- document text, graphics, map, script, and audio formats.
+- [ ] verify Rev 0 and Rev A baselines
+- [ ] map revision-specific bank and entry-point differences
+- [ ] classify text, graphics, maps, scripts, and audio
 
-Each note records sources, verified input hashes, procedure, evidence,
-confidence, and unresolved questions. Copyrighted binary inputs stay local.
+Use `templates/note.md` and follow the shared method in
+`SakuraiTsubaki/Disassembly`.

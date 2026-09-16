@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SakuraiTsubaki/Disassembly/main/schemas/analysis-manifest.schema.json",
+  "schema_version": 1,
+  "id": "midori-example",
+  "targets": [
+    "SakuraiTsubaki/PocketMonsters-Midori-Disassembly"
+  ],
+  "generator": {
+    "name": "replace-me",
+    "version": "0.0.0"
+  },
+  "command": "replace with exact command",
+  "inputs": [],
+  "outputs": []
+}

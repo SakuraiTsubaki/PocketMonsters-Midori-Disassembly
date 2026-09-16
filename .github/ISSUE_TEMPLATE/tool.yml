@@ -1,0 +1,23 @@
+name: Target tool
+description: Propose a deterministic target-specific utility
+title: "[Tool] "
+labels: ["tooling"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and supported releases
+    validations:
+      required: true
+  - type: textarea
+    id: contract
+    attributes:
+      label: Input and output contract
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification plan
+    validations:
+      required: true

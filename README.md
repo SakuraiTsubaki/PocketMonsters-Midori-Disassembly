@@ -1,38 +1,38 @@
 # PocketMonsters-Midori-Disassembly
 
-Target-specific research, tooling, and analysis for **Pocket Monsters Midori / Pokémon Green**.
+Evidence-driven disassembly research for **Pocket Monsters Midori / Pokémon Green**.
 
-## Target profile
+## Target
 
-| Field | Baseline |
+| Field | Value |
 | --- | --- |
 | Platform | Game Boy |
 | CPU | Sharp SM83 |
-| Toolchain direction | RGBDS |
-| Intended scope | Japanese Rev 0 and Rev A releases, subject to hash-verified baseline confirmation. |
+| Architecture profile | `gb-sm83` |
+| Scope | Japanese Green revisions, including Rev 0 and Rev A only after hash verification. |
+| Current stage | Foundation; no release baseline is verified yet |
 
-## Purpose
+## Ready to use
 
-- identify and verify supported retail revisions;
-- document the target's binary layout and formats;
-- develop deterministic target-specific tools;
-- publish reproducible analysis before source reconstruction begins.
+- machine-readable target metadata and an intentionally empty release matrix;
+- architecture-specific bank/section and symbol tables;
+- documented scope, workflow, research method, and roadmap;
+- local input hashing and repository validation tools;
+- unit tests, GitHub Actions, issue forms, and pull-request checks.
 
-## Layout
+## Start a verified baseline
 
-- [`research/`](research/) — target identity, references, hypotheses, and notes;
-- [`tools/`](tools/) — target-specific inspection and extraction utilities;
-- [`analysis/`](analysis/) — reproducible maps, reports, and findings.
+```sh
+python tools/hash_input.py path/to/legally-obtained-input
+python tools/validate_repository.py .
+python -m unittest discover -s tests -v
+```
 
-Reusable methods and cross-target utilities belong in
+Add only metadata and hashes to `research/releases.csv`; never add the input.
+Use `research/templates/note.md` for each bounded investigation.
+
+Shared methods and reusable tools belong in
 [`SakuraiTsubaki/Disassembly`](https://github.com/SakuraiTsubaki/Disassembly).
 
-## Ground rules
-
-- ROM images, firmware, keys, save data, and proprietary binary inputs are not
-  committed.
-- Every fact derived from a binary records the input hash, release identity,
-  address range, tool version, and reproduction command.
-- Completeness and byte-exact build claims require automated verification.
-
-This is a clean foundation. No previous experimental work was migrated.
+No earlier experimental work was migrated. Completeness and byte-exactness are
+not claimed until automated evidence exists.

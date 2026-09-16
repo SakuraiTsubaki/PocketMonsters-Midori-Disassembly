@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "architecture": "gb-sm83",
+  "assembler": "rgbasm",
+  "linker": "rgblink",
+  "fixer": "rgbfix",
+  "graphics": "rgbgfx",
+  "version": null,
+  "pinned": false,
+  "notes": "Pin an RGBDS version only after a verified baseline can be reproduced."
+}

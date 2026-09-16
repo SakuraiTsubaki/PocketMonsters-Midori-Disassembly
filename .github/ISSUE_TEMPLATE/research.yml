@@ -1,0 +1,24 @@
+name: Research question
+description: Propose a bounded study for this title
+title: "[Research] "
+labels: ["research"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Falsifiable question
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Release identity and hashes
+      description: Never upload or link a ROM.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Evidence and reproduction plan
+    validations:
+      required: true
