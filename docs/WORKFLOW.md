@@ -1,13 +1,14 @@
 # Workflow
 
-1. Hash a lawful local input with `tools/hash_input.py`.
-2. Add a candidate row to `research/releases.csv`.
+1. Hash a lawful local ROM input with `tools/hash_input.py`; never commit it.
+2. Add its identity to `research/releases.csv`.
 3. Verify header metadata, size, hashes, region, language, and revision.
 4. Open a bounded note from `research/templates/note.md`.
-5. Add ranges to the architecture-specific analysis table with provenance and
-   confidence.
-6. Add stable names to `analysis/symbols.csv`.
-7. Preserve exact commands and generated-output hashes.
-8. Run the validator, tests, and compile check.
+5. Add ranges to the architecture-specific analysis table with provenance.
+6. Commit every lawful non-ROM result needed to inspect and reproduce the work.
+7. For graphics and sprites, commit encoded data, metadata, and actual PNG
+   output together.
+8. Preserve exact commands, tool versions, logs, patches, and output hashes.
+9. Run the repository validator, artifact verifier, tests, and compile check.
 
 Observed bytes and derived facts must remain distinguishable from inference.

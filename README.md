@@ -36,3 +36,13 @@ Shared methods and reusable tools belong in
 
 No earlier experimental work was migrated. Completeness and byte-exactness are
 not claimed until automated evidence exists.
+
+## Artifact preservation
+
+ROM binaries are the only project artifacts excluded from GitHub. Preserve every
+lawful, storable non-ROM result: research, reports, source, tools, configuration,
+logs, manifests, structured data, patches, validation evidence, graphics,
+sprites, palettes, fonts, icons, tiles, and converted data.
+
+Graphics and sprite work must include actual reviewable PNG output alongside
+encoded data and metadata. See [the artifact policy](docs/ARTIFACT_POLICY.md).

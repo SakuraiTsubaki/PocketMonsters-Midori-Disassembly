@@ -11,10 +11,11 @@ from pathlib import Path
 COMMON = (
     "README.md", "CONTRIBUTING.md", "project.json",
     "config/toolchain.json", "docs/SCOPE.md", "docs/ARCHITECTURE.md",
-    "docs/WORKFLOW.md", "docs/ROADMAP.md", "research/README.md",
-    "research/releases.csv", "research/questions.md",
+    "docs/WORKFLOW.md", "docs/ROADMAP.md", "docs/ARTIFACT_POLICY.md",
+    "research/README.md", "research/releases.csv", "research/questions.md",
     "research/templates/note.md", "tools/README.md", "tools/hash_input.py",
-    "analysis/README.md", "analysis/symbols.csv", "tests/test_foundation.py",
+    "tools/verify_artifacts.py", "analysis/README.md", "analysis/symbols.csv",
+    "tests/test_foundation.py",
 )
 PROJECT_FIELDS = {
     "schema_version", "id", "repository", "title", "platform", "cpu",
@@ -54,6 +55,10 @@ def validate(root: Path) -> list[str]:
             json.loads(path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError) as exc:
             errors.append(f"invalid JSON {path.relative_to(root)}: {exc}")
+    ignored = (root / ".gitignore").read_text(encoding="utf-8")
+    for forbidden in ("*.bin", "*.map", "*.sym", "/build/", "/dist/", "/out/", "/vendor/"):
+        if forbidden in ignored:
+            errors.append(f".gitignore must not hide non-ROM artifacts: {forbidden}")
     return errors
 
 

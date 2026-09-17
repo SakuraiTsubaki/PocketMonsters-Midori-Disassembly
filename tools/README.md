@@ -1,9 +1,10 @@
 # Tools
 
-- `hash_input.py` records local input size, SHA-1, and SHA-256 without copying
-  its contents.
-- `validate_repository.py` checks this target foundation.
+- `hash_input.py` records local ROM size, SHA-1, and SHA-256 without copying it.
+- `validate_repository.py` checks the target repository contract.
+- `verify_artifacts.py` rejects ROM images and verifies PNG companions for
+  encoded graphics.
 
-Add target-specific deterministic tools here. Promote a tool to
-`SakuraiTsubaki/Disassembly` only after it has a target-neutral contract and
-multi-target tests.
+Add deterministic target-specific tools here and commit their lawful non-ROM
+outputs, logs, fixtures, and validation material. Promote reusable tools to
+`SakuraiTsubaki/Disassembly` after they gain a target-neutral contract.
