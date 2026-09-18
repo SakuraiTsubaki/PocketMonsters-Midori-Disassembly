@@ -1,1 +1,4 @@
 id,region,language,revision,status,size,sha1,sha256,notes
+midori-jp-rev0,Japan,Japanese,0,candidate,524288,82c0eef40a5e2423699d9fd8ba15dfaa8b51d196,6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c,"Header title POKEMON GREEN; header checksum 0x9c; global checksum 0xddd5"
+midori-jp-rev1,Japan,Japanese,1,candidate,524288,4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b,3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816,"Header title POKEMON GREEN; header checksum 0x9b; global checksum 0xf547"
+
