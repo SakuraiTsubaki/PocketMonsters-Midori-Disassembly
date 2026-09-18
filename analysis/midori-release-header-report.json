@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-18",
+  "generator": {
+    "name": "SakuraiTsubaki/Disassembly tools/inspect_gb_rom.py",
+    "version": "1.0.0"
+  },
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "size": 524288,
+      "sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "header": {"title": "POKEMON GREEN", "revision": 0, "sgb_flag": 3, "cartridge_type": 3, "rom_size_code": 4, "ram_size_code": 3, "destination_code": 0, "header_checksum": 156, "global_checksum": 56789},
+      "validation": {"nintendo_logo_valid": true, "header_checksum_valid": true, "global_checksum_valid": true}
+    },
+    {
+      "id": "midori-jp-rev1",
+      "size": 524288,
+      "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "header": {"title": "POKEMON GREEN", "revision": 1, "sgb_flag": 3, "cartridge_type": 3, "rom_size_code": 4, "ram_size_code": 3, "destination_code": 0, "header_checksum": 155, "global_checksum": 62791},
+      "validation": {"nintendo_logo_valid": true, "header_checksum_valid": true, "global_checksum_valid": true}
+    }
+  ]
+}
+
