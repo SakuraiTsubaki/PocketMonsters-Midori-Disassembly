@@ -31,4 +31,3 @@ bank,file_start,file_end,cpu_start,cpu_end,classification,status,confidence,sour
 0x1d,0x074000,0x077fff,0x4000,0x7fff,unclassified,fingerprinted,low,6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c,bank_sha256=1122f5f5833e1473d2cd5c5d2fff68f250b8c069a08e3977ae4c7c7c91a5da63; entropy=7.091263; unique_bytes=256; zero_bytes=324; ff_bytes=170
 0x1e,0x078000,0x07bfff,0x4000,0x7fff,unclassified,fingerprinted,low,6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c,bank_sha256=7e919b57c4e8fad1fe14dc0315522fd91c6eb8845eedc13c37146a85183217ca; entropy=6.782914; unique_bytes=256; zero_bytes=2202; ff_bytes=608
 0x1f,0x07c000,0x07ffff,0x4000,0x7fff,unclassified,fingerprinted,low,6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c,bank_sha256=9038582544e60af0b53deef13d3994a98019551b0fd89065f7db6f139fe2a2c9; entropy=7.072184; unique_bytes=255; zero_bytes=404; ff_bytes=288
-
