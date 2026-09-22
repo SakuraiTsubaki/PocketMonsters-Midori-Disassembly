@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SakuraiTsubaki/Disassembly/main/schemas/analysis-manifest.schema.json",
+  "schema_version": 1,
+  "id": "midori-release-header-report",
+  "targets": [
+    "SakuraiTsubaki/PocketMonsters-Midori-Disassembly"
+  ],
+  "generator": {
+    "name": "SakuraiTsubaki/Disassembly tools/inspect_gb_rom.py",
+    "version": "1.0.0"
+  },
+  "command": "python tools/inspect_gb_rom.py path/to/legally-obtained-input --require-valid",
+  "inputs": [
+    {"size": 524288, "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"},
+    {"size": 524288, "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816"}
+  ],
+  "outputs": [
+    {
+      "path": "analysis/midori-release-header-report.json",
+      "sha256": "c1c414d3600de260095ff501f409f883fc5513b8dcd7e35686661a80d4563f4f"
+    }
+  ]
+}
+

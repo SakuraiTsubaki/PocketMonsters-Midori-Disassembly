@@ -9,5 +9,9 @@
   "architecture": "gb-sm83",
   "family": "generation-i",
   "status": "foundation",
-  "releases": []
+  "releases": [
+    {"id": "midori-jp-rev0", "region": "Japan", "language": "Japanese", "revision": "0", "status": "candidate", "size": 524288, "sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196", "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"},
+    {"id": "midori-jp-rev1", "region": "Japan", "language": "Japanese", "revision": "1", "status": "candidate", "size": 524288, "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b", "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816"}
+  ]
 }
+
