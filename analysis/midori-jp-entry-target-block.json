@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "start_address": 336,
+  "end_address": 339,
+  "byte_length": 3,
+  "instruction_count": 1,
+  "block_bytes": "c3da09",
+  "block_bytes_sha256": "3b6e0be58772e215339c8c22fb0448b95d2d0c8e933f2bca0d2dba678d593fb3",
+  "instructions": [
+    {
+      "address": 336,
+      "bytes": "c3da09",
+      "opcode": 195,
+      "size": 3,
+      "source": "jp $09da",
+      "target_address": 2522
+    }
+  ],
+  "terminator": "jp $09da",
+  "source_size": 524288,
+  "source_sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+}

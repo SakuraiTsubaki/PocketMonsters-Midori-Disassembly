@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "source_size": 524288,
+  "source_sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+  "source_offset": 260,
+  "source_length": 48,
+  "source_bytes_sha256": "daf4cabdc852baa0291849203f0b41fd0b4ecd58e0d7aff4a509f5de4d7f9a2e",
+  "format": "12x2-tiles-4x4-1bpp-msb-first",
+  "width": 48,
+  "height": 8,
+  "png_width": 384,
+  "png_height": 64,
+  "nearest_neighbor_scale": 8,
+  "png_sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa"
+}
