@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "start_address": 2522,
+  "max_depth": 1,
+  "blocks": [
+    {
+      "schema_version": 1,
+      "start_address": 2522,
+      "end_address": 2574,
+      "byte_length": 52,
+      "instruction_count": 27,
+      "block_bytes_sha256": "66e343b5a2deb82d6939bebf458193c5e16466358d318ee0939c7248a99841be",
+      "instructions": [
+        {
+          "address": 2522,
+          "size": 1,
+          "source": "di"
+        },
+        {
+          "address": 2523,
+          "size": 1,
+          "source": "xor a"
+        },
+        {
+          "address": 2524,
+          "size": 2,
+          "source": "ldh [$ff00 + $0f], a"
+        },
+        {
+          "address": 2526,
+          "size": 2,
+          "source": "ldh [$ff00 + $ff], a"
+        },
+        {
+          "address": 2528,
+          "size": 2,
+          "source": "ldh [$ff00 + $43], a"
+        },
+        {
+          "address": 2530,
+          "size": 2,
+          "source": "ldh [$ff00 + $42], a"
+        },
+        {
+          "address": 2532,
+          "size": 2,
+          "source": "ldh [$ff00 + $01], a"
+        },
+        {
+          "address": 2534,
+          "size": 2,
+          "source": "ldh [$ff00 + $02], a"
+        },
+        {
+          "address": 2536,
+          "size": 2,
+          "source": "ldh [$ff00 + $4b], a"
+        },
+        {
+          "address": 2538,
+          "size": 2,
+          "source": "ldh [$ff00 + $4a], a"
+        },
+        {
+          "address": 2540,
+          "size": 2,
+          "source": "ldh [$ff00 + $06], a"
+        },
+        {
+          "address": 2542,
+          "size": 2,
+          "source": "ldh [$ff00 + $07], a"
+        },
+        {
+          "address": 2544,
+          "size": 2,
+          "source": "ldh [$ff00 + $47], a"
+        },
+        {
+          "address": 2546,
+          "size": 2,
+          "source": "ldh [$ff00 + $48], a"
+        },
+        {
+          "address": 2548,
+          "size": 2,
+          "source": "ldh [$ff00 + $49], a"
+        },
+        {
+          "address": 2550,
+          "size": 2,
+          "source": "ld a, $80"
+        },
+        {
+          "address": 2552,
+          "size": 2,
+          "source": "ldh [$ff00 + $40], a"
+        },
+        {
+          "address": 2554,
+          "size": 3,
+          "source": "call $0167",
+          "target_address": 359
+        },
+        {
+          "address": 2557,
+          "size": 3,
+          "source": "ld sp, $dfff",
+          "target_address": 57343
+        },
+        {
+          "address": 2560,
+          "size": 3,
+          "source": "ld hl, $c000",
+          "target_address": 49152
+        },
+        {
+          "address": 2563,
+          "size": 3,
+          "source": "ld bc, $2000",
+          "target_address": 8192
+        },
+        {
+          "address": 2566,
+          "size": 2,
+          "source": "ld [hl], $00"
+        },
+        {
+          "address": 2568,
+          "size": 1,
+          "source": "inc hl"
+        },
+        {
+          "address": 2569,
+          "size": 1,
+          "source": "dec bc"
+        },
+        {
+          "address": 2570,
+          "size": 1,
+          "source": "ld a, b"
+        },
+        {
+          "address": 2571,
+          "size": 1,
+          "source": "or c"
+        },
+        {
+          "address": 2572,
+          "size": 2,
+          "source": "jr nz $0a06",
+          "target_address": 2566
+        }
+      ],
+      "terminator": "jr nz $0a06",
+      "depth": 0
+    },
+    {
+      "schema_version": 1,
+      "start_address": 2574,
+      "end_address": 2700,
+      "byte_length": 126,
+      "instruction_count": 54,
+      "block_bytes_sha256": "aa800cf910b355f181da2fe7f957f8c7625c10ebd4e9003c8731793f388a5fc7",
+      "instructions": [
+        {
+          "address": 2574,
+          "size": 3,
+          "source": "call $0a8c",
+          "target_address": 2700
+        },
+        {
+          "address": 2577,
+          "size": 3,
+          "source": "ld hl, $ff80",
+          "target_address": 65408
+        },
+        {
+          "address": 2580,
+          "size": 3,
+          "source": "ld bc, $007f",
+          "target_address": 127
+        },
+        {
+          "address": 2583,
+          "size": 3,
+          "source": "call $372a",
+          "target_address": 14122
+        },
+        {
+          "address": 2586,
+          "size": 3,
+          "source": "call $0188",
+          "target_address": 392
+        },
+        {
+          "address": 2589,
+          "size": 2,
+          "source": "ld a, $01"
+        },
+        {
+          "address": 2591,
+          "size": 2,
+          "source": "ldh [$ff00 + $b8], a"
+        },
+        {
+          "address": 2593,
+          "size": 3,
+          "source": "ld [$2000], a",
+          "target_address": 8192
+        },
+        {
+          "address": 2596,
+          "size": 3,
+          "source": "call $4750",
+          "target_address": 18256
+        },
+        {
+          "address": 2599,
+          "size": 1,
+          "source": "xor a"
+        },
+        {
+          "address": 2600,
+          "size": 2,
+          "source": "ldh [$ff00 + $d7], a"
+        },
+        {
+          "address": 2602,
+          "size": 2,
+          "source": "ldh [$ff00 + $41], a"
+        },
+        {
+          "address": 2604,
+          "size": 2,
+          "source": "ldh [$ff00 + $ae], a"
+        },
+        {
+          "address": 2606,
+          "size": 2,
+          "source": "ldh [$ff00 + $af], a"
+        },
+        {
+          "address": 2608,
+          "size": 2,
+          "source": "ldh [$ff00 + $0f], a"
+        },
+        {
+          "address": 2610,
+          "size": 2,
+          "source": "ld a, $0d"
+        },
+        {
+          "address": 2612,
+          "size": 2,
+          "source": "ldh [$ff00 + $ff], a"
+        },
+        {
+          "address": 2614,
+          "size": 2,
+          "source": "ld a, $90"
+        },
+        {
+          "address": 2616,
+          "size": 2,
+          "source": "ldh [$ff00 + $b0], a"
+        },
+        {
+          "address": 2618,
+          "size": 2,
+          "source": "ldh [$ff00 + $4a], a"
+        },
+        {
+          "address": 2620,
+          "size": 2,
+          "source": "ld a, $07"
+        },
+        {
+          "address": 2622,
+          "size": 2,
+          "source": "ldh [$ff00 + $4b], a"
+        },
+        {
+          "address": 2624,
+          "size": 2,
+          "source": "ld a, $ff"
+        },
+        {
+          "address": 2626,
+          "size": 2,
+          "source": "ldh [$ff00 + $aa], a"
+        },
+        {
+          "address": 2628,
+          "size": 2,
+          "source": "ld h, $98"
+        },
+        {
+          "address": 2630,
+          "size": 3,
+          "source": "call $0787",
+          "target_address": 1927
+        },
+        {
+          "address": 2633,
+          "size": 2,
+          "source": "ld h, $9c"
+        },
+        {
+          "address": 2635,
+          "size": 3,
+          "source": "call $0787",
+          "target_address": 1927
+        },
+        {
+          "address": 2638,
+          "size": 2,
+          "source": "ld a, $e3"
+        },
+        {
+          "address": 2640,
+          "size": 2,
+          "source": "ldh [$ff00 + $40], a"
+        },
+        {
+          "address": 2642,
+          "size": 2,
+          "source": "ld a, $10"
+        },
+        {
+          "address": 2644,
+          "size": 2,
+          "source": "ldh [$ff00 + $8a], a"
+        },
+        {
+          "address": 2646,
+          "size": 3,
+          "source": "call $0a96",
+          "target_address": 2710
+        },
+        {
+          "address": 2649,
+          "size": 1,
+          "source": "ei"
+        },
+        {
+          "address": 2650,
+          "size": 2,
+          "source": "ld a, $40"
+        },
+        {
+          "address": 2652,
+          "size": 3,
+          "source": "call $3e9d",
+          "target_address": 16029
+        },
+        {
+          "address": 2655,
+          "size": 2,
+          "source": "ld a, $1f"
+        },
+        {
+          "address": 2657,
+          "size": 3,
+          "source": "ld [$c0ef], a",
+          "target_address": 49391
+        },
+        {
+          "address": 2660,
+          "size": 3,
+          "source": "ld [$c0f0], a",
+          "target_address": 49392
+        },
+        {
+          "address": 2663,
+          "size": 2,
+          "source": "ld a, $9c"
+        },
+        {
+          "address": 2665,
+          "size": 3,
+          "source": "ld [$ffbd], a",
+          "target_address": 65469
+        },
+        {
+          "address": 2668,
+          "size": 1,
+          "source": "xor a"
+        },
+        {
+          "address": 2669,
+          "size": 3,
+          "source": "ld [$ffbc], a",
+          "target_address": 65468
+        },
+        {
+          "address": 2672,
+          "size": 1,
+          "source": "dec a"
+        },
+        {
+          "address": 2673,
+          "size": 3,
+          "source": "ld [$cfb2], a",
+          "target_address": 53170
+        },
+        {
+          "address": 2676,
+          "size": 2,
+          "source": "ld a, $32"
+        },
+        {
+          "address": 2678,
+          "size": 3,
+          "source": "call $3e9d",
+          "target_address": 16029
+        },
+        {
+          "address": 2681,
+          "size": 3,
+          "source": "call $0167",
+          "target_address": 359
+        },
+        {
+          "address": 2684,
+          "size": 3,
+          "source": "call $0a8c",
+          "target_address": 2700
+        },
+        {
+          "address": 2687,
+          "size": 3,
+          "source": "call $3e0c",
+          "target_address": 15884
+        },
+        {
+          "address": 2690,
+          "size": 3,
+          "source": "call $0188",
+          "target_address": 392
+        },
+        {
+          "address": 2693,
+          "size": 2,
+          "source": "ld a, $e3"
+        },
+        {
+          "address": 2695,
+          "size": 2,
+          "source": "ldh [$ff00 + $40], a"
+        },
+        {
+          "address": 2697,
+          "size": 3,
+          "source": "jp $476e",
+          "target_address": 18286
+        }
+      ],
+      "terminator": "jp $476e",
+      "depth": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": 2522,
+      "target": 2566,
+      "kind": "branch"
+    },
+    {
+      "source": 2522,
+      "target": 2574,
+      "kind": "fallthrough"
+    },
+    {
+      "source": 2574,
+      "target": 18286,
+      "kind": "branch"
+    }
+  ],
+  "source_size": 524288,
+  "source_sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+}
