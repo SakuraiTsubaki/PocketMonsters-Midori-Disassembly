@@ -1,0 +1,19 @@
+{
+  "schema_version":1,
+  "id":"midori-title-version-graphics",
+  "generators":[
+    {"repository":"SakuraiTsubaki/Disassembly","tool":"tools/extract_gb_1bpp.py"},
+    {"repository":"SakuraiTsubaki/Disassembly","tool":"tools/compose_gb_1bpp_tilemap.py"}
+  ],
+  "reference":{"repository":"Narishma-gb/pokegreen","symbol":"Version_GFX","graphics_path":"gfx/title/rg_version.1bpp","selection_symbol":"VersionOnTitleScreenText"},
+  "inputs":[
+    {"release":"midori-jp-rev0","rom_sha256":"6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c","rom_size":524288,"tiles_offset":425984,"tiles_length":80,"tiles_sha256":"9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229","tilemap_offset":18906,"tilemap_length":9,"tilemap_sha256":"02869557fe4c57badf76c45b69175818024a873bbe377657c091eeecb3aaf122"},
+    {"release":"midori-jp-rev1","rom_sha256":"3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816","rom_size":524288,"tiles_offset":425984,"tiles_length":80,"tiles_sha256":"9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229","tilemap_offset":18906,"tilemap_length":9,"tilemap_sha256":"02869557fe4c57badf76c45b69175818024a873bbe377657c091eeecb3aaf122"}
+  ],
+  "outputs":[
+    {"path":"analysis/midori-jp-title-version-tiles.json","sha256":"87c286cf6d63650df96b1a3cb7703ea610e57a9226f2b1384c67de8d1e92c699"},
+    {"path":"analysis/midori-jp-title-version-composed.json","sha256":"b55f0da80e4baa0e6cc96ed746f22384f2f2e64dbbc0e76570393fee27e0e7ac"},
+    {"path":"graphics/title/version-tiles-jp.png","sha256":"fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"},
+    {"path":"graphics/title/green-version-jp.png","sha256":"383a97bea158edf0a4e0fa634ad5bfa7cd4ec50a190d2909a2c82e7c360e864b"}
+  ]
+}

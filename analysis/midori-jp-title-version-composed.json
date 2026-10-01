@@ -1,0 +1,17 @@
+{
+  "rom_size": 524288,
+  "rom_sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+  "tiles_offset": 425984,
+  "tiles_length": 80,
+  "tiles_sha256": "9bf9798802187f4072c0f734d94068745cdb5467be2c518ef9db282de2f1b229",
+  "tile_count": 10,
+  "base_tile_id": "0x60",
+  "tilemap_offset": 18906,
+  "tilemap_length": 9,
+  "tilemap_sha256": "02869557fe4c57badf76c45b69175818024a873bbe377657c091eeecb3aaf122",
+  "blank_tile_ids": [
+    "0x7f"
+  ],
+  "format": "game-boy-1bpp-indexed-tilemap",
+  "png_sha256": "383a97bea158edf0a4e0fa634ad5bfa7cd4ec50a190d2909a2c82e7c360e864b"
+}
