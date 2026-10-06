@@ -1,0 +1,2 @@
+{"schema_version":1,"target":{"release":"Midori-JP-rev0-candidate","sha256":"6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"},"block":{"start":"0x09DA","end_exclusive":"0x0A0E","bytes_sha256":"66e343b5a2deb82d6939bebf458193c5e16466358d318ee0939c7248a99841be"},"outputs":[{"path":"src/startup_main_block.asm","sha256":"f6b71c955989a02dab328b9930885d7a2f969c5c365c93b1d41f059020cc6818"},{"path":"analysis/midori-jp-startup-main-block.json","sha256":"dbc40631e6a22215d3e2056736c228ab71b8b4dac9b7e89baf7dca88e2b2c0d5"}],"raw_rom_bytes_included":false}
+
