@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-08",
+  "asset": "japanese-main-font",
+  "format": "game-boy-1bpp-8x8-tiles",
+  "tile_count": 128,
+  "source_offset": 68377,
+  "source_length": 1024,
+  "reference": {
+    "repository": "Narishma-gb/pokegreen",
+    "source_commit": "953f41b34108621b2bf13c3b1e53abfc9c3e5aec",
+    "symbols_commit": "bcb11e981bfc46428b388a42be249bcf547b1c93",
+    "paths": ["gfx/font.asm", "home/load_font.asm", "gfx/font/font.png", "pokegreen.sym", "pokegreen11.sym"]
+  },
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "commit": "ed86c88d1a6ba5ea05663334732e9d354a8bb1dd",
+    "tool": "tools/extract_gb_1bpp.py",
+    "arguments": ["--offset", "0x10b19", "--tile-count", "128", "--tiles-per-row", "16"]
+  },
+  "releases": [
+    {"id": "midori-jp-rev0", "sha1": "82c0eef40a5e2423699d9fd8ba15dfaa8b51d196", "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c", "range_sha256": "11bfba65ad8f3b4a93f3c9b400afb611fb4072b26e2c40c77aab67bd08c9bf15"},
+    {"id": "midori-jp-rev1", "sha1": "4b97cd44aa3f0dd290bfe7b3ac17b7bd8270897b", "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816", "range_sha256": "11bfba65ad8f3b4a93f3c9b400afb611fb4072b26e2c40c77aab67bd08c9bf15"}
+  ],
+  "outputs": [
+    {"path": "analysis/midori-jp-main-font.json", "sha256": "2aaf5a40f8104a5cb608256260154e7234d37d844a3c1dc776c40e264b4f2ef7"},
+    {"path": "graphics/font/main-font-jp.png", "sha256": "7264ef108040d7905db2d27476c6e3f47cd30f58b64767f10fc8290a355888cf"},
+    {"path": "research/japanese-main-font.md", "sha256": "c85bded9e014eed61df198b4caf627afc088e4830f96fe11d9b271e9bf76f1d8"}
+  ],
+  "raw_rom_bytes_included": false
+}
