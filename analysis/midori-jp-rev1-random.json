@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev1",
+    "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816"
+  },
+  "function": {
+    "name": "Random_",
+    "rom_offset": 81898,
+    "bank": 4,
+    "address": 32746,
+    "range_end_exclusive": 81915,
+    "length": 17,
+    "code_sha256": "4f8dcfd55a40324b60e01baf3a1cfc0263398ba741ad3b73c697de486139d985",
+    "globals": {
+      "hRandomAdd": 65491,
+      "hRandomSub": 65492
+    }
+  },
+  "semantics": {
+    "entropy_source": "DIV register (0xFF04)",
+    "add_state": "hRandomAdd = hRandomAdd + DIV + carry",
+    "subtract_state": "hRandomSub = DIV - hRandomSub - carry",
+    "return_register": "A (updated hRandomSub)"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "engine/math/random.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}
