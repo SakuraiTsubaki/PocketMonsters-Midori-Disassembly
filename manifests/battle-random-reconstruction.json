@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "function": "BattleRandom",
+  "releases": [
+    "midori-jp-rev0",
+    "midori-jp-rev1"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_battle_random.py",
+    "tool_sha256": "02c98200055999301ffea8b76ecac74cccae87da4f159c9b9d4b64afd2fb8dad"
+  },
+  "outputs": [
+    {
+      "path": "src/battle_random.asm",
+      "sha256": "6a273ffcf4de8249ac9633140544f612afa405f2d577001f74bafb29dc398f6a"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-battle-random.json",
+      "sha256": "71c86bd9bcfd9da0b5b16206f71c4605310a89638ac82b558726ddc554091e48"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-battle-random.json",
+      "sha256": "1bc4ddbcaf98967df689012714472776cb87254adb5e94c3826c6d7c13b50929"
+    },
+    {
+      "path": "research/battle-random-reconstruction.md",
+      "sha256": "4a604fec37df176284807c5a4e2e67acc26c3f778b80d972cac206fc1e4c0860"
+    },
+    {
+      "path": "tests/test_battle_random_reconstruction.py",
+      "sha256": "a7315f936ed88d1a1b35f23736c8ae093c712edfa3040ccd0443cc1960dca541"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
