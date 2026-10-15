@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "function": "Random",
+  "releases": [
+    "midori-jp-rev0",
+    "midori-jp-rev1"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_random_wrapper.py",
+    "tool_sha256": "a1c957a42389f463b3dba23642bc530eb21ab3d45066a9d2ff5f92e7a726621a"
+  },
+  "outputs": [
+    {
+      "path": "src/random_wrapper.asm",
+      "sha256": "3b000e3f98a0eac89106697f57b4474c2f0a7d1d84cc772e1d631a1e4008e269"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-random-wrapper.json",
+      "sha256": "c7b276b7c087a035488b09f1b5833b2d65ab174d2339c63173d0425ce0525689"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-random-wrapper.json",
+      "sha256": "38fa959c6d433c4e55ffbe9a2779a23caa6cc64d9a607c19eb2df9d40faf9d7a"
+    },
+    {
+      "path": "research/random-wrapper-reconstruction.md",
+      "sha256": "541a7bd9dd56d82884133cf88cc3abbead69a257c1bff5647baf9dcfe9714cf7"
+    },
+    {
+      "path": "tests/test_random_wrapper_reconstruction.py",
+      "sha256": "1249ceca8a1e1a9c03f22ea4234932ea886c25946f3b8320cb40def1f6828f81"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
