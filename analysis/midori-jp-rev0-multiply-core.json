@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+  },
+  "function": {
+    "name": "_Multiply",
+    "rom_offset": 228979,
+    "bank": 13,
+    "address": 32371,
+    "range_end_exclusive": 229079,
+    "length": 100,
+    "code_sha256": "fd06ac5c2f683a65c1825e318fe63bd21f92fefd4b19bf9608ddb7a613a511e9",
+    "iterations": 8,
+    "algorithm": "shift-add",
+    "hram_layout": {
+      "product": [
+        65429,
+        65430,
+        65431,
+        65432
+      ],
+      "multiplicand": [
+        65430,
+        65431,
+        65432
+      ],
+      "multiplier": 65433,
+      "multiply_buffer": [
+        65435,
+        65436,
+        65437,
+        65438
+      ]
+    }
+  },
+  "semantics": {
+    "operation": "three-byte multiplicand times one-byte multiplier using eight shift-add iterations",
+    "input": "hMultiplicand and hMultiplier",
+    "output": "four-byte hProduct",
+    "endianness": "big-endian"
+  },
+  "boundary_evidence": {
+    "start": "Multiply far-call target",
+    "end": "Divide homecall target"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "engine/math/multiply_divide.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}
