@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+  },
+  "function": {
+    "name": "Divide",
+    "rom_offset": 14594,
+    "bank": 0,
+    "address": 14594,
+    "range_end_exclusive": 14621,
+    "length": 27,
+    "code_sha256": "424b3e55a3f22d29dc25ce41c4d46687ce6d397ca2236d287cd2b9afa1070296",
+    "variant": "inline-absolute-hram",
+    "home_call": {
+      "target": {
+        "bank": 13,
+        "address": 32471,
+        "rom_offset": 229079
+      },
+      "bank_switch": {
+        "strategy": "inline",
+        "loaded_rom_bank_address": 65464,
+        "rom_bank_register": 8192,
+        "load_form": "absolute"
+      }
+    },
+    "preserved_registers": [
+      "AF",
+      "BC",
+      "DE",
+      "HL"
+    ]
+  },
+  "semantics": {
+    "operation": "preserve registers, switch to the _Divide bank, call it, and restore the prior ROM bank",
+    "input": "hDividend, byte length in B, and hDivisor",
+    "output": "hQuotient and hRemainder"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/math.asm",
+    "macro_path": "macros/farcall.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}

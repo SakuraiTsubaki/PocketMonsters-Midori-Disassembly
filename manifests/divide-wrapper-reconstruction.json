@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "function": "Divide",
+  "releases": [
+    "midori-jp-rev0",
+    "midori-jp-rev1"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/inspect_gen1_divide_wrapper.py",
+    "tool_sha256": "ce52ca1aaf1e2c93cc2f97603b77d7cc584d38f7ab02762561a538f08770c971"
+  },
+  "outputs": [
+    {
+      "path": "src/divide_wrapper.asm",
+      "sha256": "6a425979a3740c6f8f0fbc6bd9a06a1947cd4a05ac2f55cd4522d9bafa24ca72"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-divide-wrapper.json",
+      "sha256": "42705357525c3c5a8862173a7fe741fcb0ee296be7d2becd1dfeb9dd25fb565b"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-divide-wrapper.json",
+      "sha256": "61dc786cb2c3c02a3687ab8f78aeed4a772506792e1dc08837c8083a7b4c805c"
+    },
+    {
+      "path": "research/divide-wrapper-reconstruction.md",
+      "sha256": "1d0f15818c973fc0ce189b90cf3cf42e10f2c6307f4ed58d60d43f7e2adeb560"
+    },
+    {
+      "path": "tests/test_divide_wrapper_reconstruction.py",
+      "sha256": "07936adf068d27c230d1ca64c440cabe2ce15b52a98fdb9eec8001b32c0f0d0d"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
