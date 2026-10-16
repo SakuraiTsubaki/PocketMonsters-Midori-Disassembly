@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+  },
+  "function": {
+    "name": "_Divide",
+    "rom_offset": 229079,
+    "bank": 13,
+    "address": 32471,
+    "range_end_exclusive": 229215,
+    "length": 136,
+    "code_sha256": "6874646800cec926f4da0d31fd1b650ec27071171d3666f260e0f6abbedae412",
+    "algorithm": "restoring long division",
+    "maximum_dividend_bytes": 4,
+    "hram_layout": {
+      "dividend": [
+        65429,
+        65430,
+        65431,
+        65432
+      ],
+      "divisor": 65433,
+      "divide_buffer": [
+        65434,
+        65435,
+        65436,
+        65437,
+        65438
+      ],
+      "remainder": 65433,
+      "quotient": [
+        65429,
+        65430,
+        65431,
+        65432
+      ]
+    }
+  },
+  "semantics": {
+    "operation": "restoring long division of up to four big-endian dividend bytes",
+    "input": "hDividend, byte length in B, and hDivisor",
+    "output": "four-byte hQuotient and hRemainder",
+    "endianness": "big-endian"
+  },
+  "boundary_evidence": {
+    "start": "Divide homecall target",
+    "end": "verified terminal RET after quotient stores"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "engine/math/multiply_divide.asm",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}
