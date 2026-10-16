@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "function": "Multiply",
+  "releases": [
+    "midori-jp-rev0",
+    "midori-jp-rev1"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_multiply_wrapper.py",
+    "tool_sha256": "6026e195e2f8113847a08e9160b5f17b1fcca4c55d59c888e08cded25568713f"
+  },
+  "outputs": [
+    {
+      "path": "src/multiply_wrapper.asm",
+      "sha256": "21ff259f9fe625e0f1352e00d78a420dd8393853e9de1b79729d2e86d0a97014"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-multiply-wrapper.json",
+      "sha256": "0458cab6a0e23220b7a55556ec50bec39de13ac02b52e643f259c05a2a05df78"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-multiply-wrapper.json",
+      "sha256": "9018f2163836d3515eb6c8dbeea7811cf2d2a204eef365bf93013f974a3fc0d5"
+    },
+    {
+      "path": "research/multiply-wrapper-reconstruction.md",
+      "sha256": "b35d8cd2d8c72c7ea664155ab8a55a4e59a549f0863522f78de2ace541ac852b"
+    },
+    {
+      "path": "tests/test_multiply_wrapper_reconstruction.py",
+      "sha256": "8f0ac49701d4de07f6084a714a1b2932d779005b0e4bc4ef90323a97ceb3ecd8"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
