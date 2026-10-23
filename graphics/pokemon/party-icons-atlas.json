@@ -1,0 +1,253 @@
+{
+  "schema_version": 1,
+  "layout": "four composed icon types in columns; animation frame 1 above frame 2",
+  "composition": "each stored 8-pixel-wide half is followed by its horizontal mirror, matching symmetric OAM display",
+  "icon_count": 4,
+  "frames_per_icon": 2,
+  "logical_width": 64,
+  "logical_height": 32,
+  "source_atlas": {
+    "path": "graphics/pokemon/party-icons-source-atlas.png",
+    "logical_width": 32,
+    "logical_height": 32
+  },
+  "png_scale": 4,
+  "icons": [
+    {
+      "name": "bug",
+      "logical_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      },
+      "png_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 64,
+        "height": 128
+      },
+      "source_logical_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 8,
+        "height": 32
+      },
+      "source_png_rect": {
+        "x": 0,
+        "y": 0,
+        "width": 32,
+        "height": 128
+      },
+      "frames": [
+        {
+          "index": 0,
+          "logical_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 0,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        },
+        {
+          "index": 1,
+          "logical_rect": {
+            "x": 0,
+            "y": 16,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 0,
+            "y": 64,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "name": "plant",
+      "logical_rect": {
+        "x": 16,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      },
+      "png_rect": {
+        "x": 64,
+        "y": 0,
+        "width": 64,
+        "height": 128
+      },
+      "source_logical_rect": {
+        "x": 8,
+        "y": 0,
+        "width": 8,
+        "height": 32
+      },
+      "source_png_rect": {
+        "x": 32,
+        "y": 0,
+        "width": 32,
+        "height": 128
+      },
+      "frames": [
+        {
+          "index": 0,
+          "logical_rect": {
+            "x": 16,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 64,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        },
+        {
+          "index": 1,
+          "logical_rect": {
+            "x": 16,
+            "y": 16,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 64,
+            "y": 64,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "name": "snake",
+      "logical_rect": {
+        "x": 32,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      },
+      "png_rect": {
+        "x": 128,
+        "y": 0,
+        "width": 64,
+        "height": 128
+      },
+      "source_logical_rect": {
+        "x": 16,
+        "y": 0,
+        "width": 8,
+        "height": 32
+      },
+      "source_png_rect": {
+        "x": 64,
+        "y": 0,
+        "width": 32,
+        "height": 128
+      },
+      "frames": [
+        {
+          "index": 0,
+          "logical_rect": {
+            "x": 32,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 128,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        },
+        {
+          "index": 1,
+          "logical_rect": {
+            "x": 32,
+            "y": 16,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 128,
+            "y": 64,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    },
+    {
+      "name": "quadruped",
+      "logical_rect": {
+        "x": 48,
+        "y": 0,
+        "width": 16,
+        "height": 32
+      },
+      "png_rect": {
+        "x": 192,
+        "y": 0,
+        "width": 64,
+        "height": 128
+      },
+      "source_logical_rect": {
+        "x": 24,
+        "y": 0,
+        "width": 8,
+        "height": 32
+      },
+      "source_png_rect": {
+        "x": 96,
+        "y": 0,
+        "width": 32,
+        "height": 128
+      },
+      "frames": [
+        {
+          "index": 0,
+          "logical_rect": {
+            "x": 48,
+            "y": 0,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 192,
+            "y": 0,
+            "width": 64,
+            "height": 64
+          }
+        },
+        {
+          "index": 1,
+          "logical_rect": {
+            "x": 48,
+            "y": 16,
+            "width": 16,
+            "height": 16
+          },
+          "png_rect": {
+            "x": 192,
+            "y": 64,
+            "width": 64,
+            "height": 64
+          }
+        }
+      ]
+    }
+  ]
+}

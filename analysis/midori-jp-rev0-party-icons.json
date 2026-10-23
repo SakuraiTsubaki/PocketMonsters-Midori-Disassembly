@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c"
+  },
+  "asset": {
+    "name": "AnimatedPartyIcons",
+    "source_offset": 466461,
+    "source_length": 256,
+    "source_sha256": "7512db31bd72d44a7b5a918167d1e2baad594729fc591b428b86f07fb9ac7453",
+    "format": "game-boy-2bpp-8x8-tiles",
+    "icon_count": 4,
+    "frames_per_icon": 2,
+    "stored_half_width": 8,
+    "logical_icon_width": 16,
+    "logical_icon_height": 32,
+    "composition": "horizontal mirror"
+  },
+  "outputs": [
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "0de928b78122de91cc72045751fc696a1355100dcee0ad1c6f79c40c48449801",
+      "width": 256,
+      "height": 128,
+      "scale": 4,
+      "kind": "composed"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-source-atlas.png",
+      "sha256": "6ffe609e236f2a45b98490fa2857c21c2ac1bc9ba6233d7cef17fdfe189d96ab",
+      "width": 128,
+      "height": 128,
+      "scale": 4,
+      "kind": "stored-halves"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "7b49d88045ab5977c074c8b8a3c196fbc695bb2a6d83b87fc8413867fcb87947"
+    }
+  ],
+  "origin_reference": true,
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "a53671100ec22e5394ff26ec028d0812a238dae2",
+    "path": "engine/gfx/mon_icons.asm",
+    "asset_directory": "gfx/icons",
+    "raw_rom_bytes_published": false
+  },
+  "raw_rom_bytes_included": false
+}

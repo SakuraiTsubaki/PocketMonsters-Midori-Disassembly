@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Green",
+  "asset": "AnimatedPartyIcons",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/extract_gen1_party_icons.py",
+    "tool_sha256": "5fbb62555f95571d3567d67adad69b3798080a177319075d7575be2996a99960"
+  },
+  "outputs": [
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "0de928b78122de91cc72045751fc696a1355100dcee0ad1c6f79c40c48449801"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-source-atlas.png",
+      "sha256": "6ffe609e236f2a45b98490fa2857c21c2ac1bc9ba6233d7cef17fdfe189d96ab"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "7b49d88045ab5977c074c8b8a3c196fbc695bb2a6d83b87fc8413867fcb87947"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-party-icons.json",
+      "sha256": "1e627d3a77bd711e58bb4a4c2d3606ab43d31c44715bed1177b2f7dd5126ba80"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-party-icons.json",
+      "sha256": "a7474116ac6c766579ac8d6e1ae9fdc6c159ef5475c4057bfea98a8215c7110c"
+    },
+    {
+      "path": "analysis/party-icons-summary.json",
+      "sha256": "1b5450de0bb6784d934359e6694e476806fe1807f5fdb91e4ecfe628b4077cd1"
+    },
+    {
+      "path": "research/party-icons.md",
+      "sha256": "c1934f565d438b7f45cccac98dfb15c857f42253343c534b428cc116a781512d"
+    },
+    {
+      "path": "tests/test_party_icons.py",
+      "sha256": "72b0405e71321bf97badd724de3d61ebc61978de5ebeecefe651531b9c07c9e3"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
