@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "function": "CopyData",
+  "releases": [
+    "midori-jp-rev0",
+    "midori-jp-rev1"
+  ],
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/locate_gen1_copy_data.py",
+    "tool_sha256": "02cd7f4be29e33890f7f9143e0f8a71d89b7025635102d95aba9f3ed285149e1"
+  },
+  "outputs": [
+    {
+      "path": "src/copy_data.asm",
+      "sha256": "c5ae549b6bfe9d81a728ddbbbdf1e120c80d0b30d7e7f77818b6d7ee6a245bc1"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-copy-data.json",
+      "sha256": "62b61b60e7bf412e495b6559cad5e02b3269b1b293438df1a26ee1aaa6204bf2"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-copy-data.json",
+      "sha256": "5eb5151b6131001e12f1be9d7ee775d017e3467b066ea5026f86d12276e6767e"
+    },
+    {
+      "path": "research/copy-data-reconstruction.md",
+      "sha256": "e5150443f431a2cefd4da82568b6917adb01416db9827b6ffd87763aa9a1bbe2"
+    },
+    {
+      "path": "tests/test_copy_data_reconstruction.py",
+      "sha256": "0e438df80c5cf8948288c2448817a3d183a8a2b9a85dac53c9fd64cb8d2a2485"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
