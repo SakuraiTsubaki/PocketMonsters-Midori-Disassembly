@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Green",
+  "root": "graphics",
+  "asset_count": 7,
+  "png_count": 6,
+  "metadata_count": 1,
+  "official_language_priority": [
+    "Japanese",
+    "Korean",
+    "English",
+    "German",
+    "French",
+    "Italian",
+    "Spanish"
+  ],
+  "assets": [
+    {
+      "path": "graphics/font/main-font-jp.png",
+      "sha256": "7264ef108040d7905db2d27476c6e3f47cd30f58b64767f10fc8290a355888cf",
+      "size": 2218,
+      "format": "PNG",
+      "category": "font",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/japanese-main-font.json",
+          "sha256": "3d98b872d7e3eabb9a7df5e1fd34a364c036bf7a40fccb5a0874c4aca35cf1ca"
+        }
+      ],
+      "png": {
+        "width": 512,
+        "height": 256,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/header/nintendo-logo.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa",
+      "size": 662,
+      "format": "PNG",
+      "category": "header",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/header-logo.json",
+          "sha256": "f2198ca859b2330ee2cdd896807256573593a341df4e4920b50eec1ab5a2e08b"
+        }
+      ],
+      "png": {
+        "width": 384,
+        "height": 64,
+        "bit_depth": 8,
+        "color_type": "truecolor-alpha",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "7b49d88045ab5977c074c8b8a3c196fbc695bb2a6d83b87fc8413867fcb87947",
+      "size": 4913,
+      "format": "JSON",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f5aa6fd2f9e1a57f9d95d14113c9b215901756e23efb65f442fbeae9fe53af90"
+        },
+        {
+          "path": "analysis/midori-jp-rev0-party-icons.json",
+          "sha256": "1e627d3a77bd711e58bb4a4c2d3606ab43d31c44715bed1177b2f7dd5126ba80"
+        },
+        {
+          "path": "analysis/midori-jp-rev1-party-icons.json",
+          "sha256": "a7474116ac6c766579ac8d6e1ae9fdc6c159ef5475c4057bfea98a8215c7110c"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "1b5450de0bb6784d934359e6694e476806fe1807f5fdb91e4ecfe628b4077cd1"
+        }
+      ]
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "0de928b78122de91cc72045751fc696a1355100dcee0ad1c6f79c40c48449801",
+      "size": 788,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f5aa6fd2f9e1a57f9d95d14113c9b215901756e23efb65f442fbeae9fe53af90"
+        },
+        {
+          "path": "analysis/midori-jp-rev0-party-icons.json",
+          "sha256": "1e627d3a77bd711e58bb4a4c2d3606ab43d31c44715bed1177b2f7dd5126ba80"
+        },
+        {
+          "path": "analysis/midori-jp-rev1-party-icons.json",
+          "sha256": "a7474116ac6c766579ac8d6e1ae9fdc6c159ef5475c4057bfea98a8215c7110c"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "1b5450de0bb6784d934359e6694e476806fe1807f5fdb91e4ecfe628b4077cd1"
+        }
+      ],
+      "png": {
+        "width": 256,
+        "height": 128,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/pokemon/party-icons-source-atlas.png",
+      "sha256": "6ffe609e236f2a45b98490fa2857c21c2ac1bc9ba6233d7cef17fdfe189d96ab",
+      "size": 553,
+      "format": "PNG",
+      "category": "pokemon",
+      "language": "Unspecified",
+      "origin_reference": false,
+      "provenance": [
+        {
+          "path": "manifests/party-icons.json",
+          "sha256": "f5aa6fd2f9e1a57f9d95d14113c9b215901756e23efb65f442fbeae9fe53af90"
+        },
+        {
+          "path": "analysis/midori-jp-rev0-party-icons.json",
+          "sha256": "1e627d3a77bd711e58bb4a4c2d3606ab43d31c44715bed1177b2f7dd5126ba80"
+        },
+        {
+          "path": "analysis/midori-jp-rev1-party-icons.json",
+          "sha256": "a7474116ac6c766579ac8d6e1ae9fdc6c159ef5475c4057bfea98a8215c7110c"
+        },
+        {
+          "path": "analysis/party-icons-summary.json",
+          "sha256": "1b5450de0bb6784d934359e6694e476806fe1807f5fdb91e4ecfe628b4077cd1"
+        }
+      ],
+      "png": {
+        "width": 128,
+        "height": 128,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/green-version-jp.png",
+      "sha256": "383a97bea158edf0a4e0fa634ad5bfa7cd4ec50a190d2909a2c82e7c360e864b",
+      "size": 208,
+      "format": "PNG",
+      "category": "title",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "df31dc6a6ba024d69a871acec59eee802fc16ba4ad3ce7a593ccf4e8f129d4cb"
+        }
+      ],
+      "png": {
+        "width": 288,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    },
+    {
+      "path": "graphics/title/version-tiles-jp.png",
+      "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a",
+      "size": 219,
+      "format": "PNG",
+      "category": "title",
+      "language": "Japanese",
+      "origin_reference": true,
+      "provenance": [
+        {
+          "path": "manifests/title-version-graphics.json",
+          "sha256": "df31dc6a6ba024d69a871acec59eee802fc16ba4ad3ce7a593ccf4e8f129d4cb"
+        }
+      ],
+      "png": {
+        "width": 320,
+        "height": 32,
+        "bit_depth": 8,
+        "color_type": "grayscale",
+        "interlaced": false
+      }
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

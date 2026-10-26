@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "game": "Pokemon Green",
+  "asset_count": 7,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_public_graphics.py",
+    "tool_sha256": "b5bafdc488101945e9256675e9508a812fb77c57cbc1644465f2daf50e5acdbf"
+  },
+  "inputs": [
+    {
+      "path": "graphics/font/main-font-jp.png",
+      "sha256": "7264ef108040d7905db2d27476c6e3f47cd30f58b64767f10fc8290a355888cf"
+    },
+    {
+      "path": "graphics/header/nintendo-logo.png",
+      "sha256": "10e9a7189dad4bcced861a2ba409813b0cb6e78c5c87229bb5fd93343e397faa"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.json",
+      "sha256": "7b49d88045ab5977c074c8b8a3c196fbc695bb2a6d83b87fc8413867fcb87947"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-atlas.png",
+      "sha256": "0de928b78122de91cc72045751fc696a1355100dcee0ad1c6f79c40c48449801"
+    },
+    {
+      "path": "graphics/pokemon/party-icons-source-atlas.png",
+      "sha256": "6ffe609e236f2a45b98490fa2857c21c2ac1bc9ba6233d7cef17fdfe189d96ab"
+    },
+    {
+      "path": "graphics/title/green-version-jp.png",
+      "sha256": "383a97bea158edf0a4e0fa634ad5bfa7cd4ec50a190d2909a2c82e7c360e864b"
+    },
+    {
+      "path": "graphics/title/version-tiles-jp.png",
+      "sha256": "fbfb3d0f987739292d49402f6068ef7444f4e75cef618421ffa8aaf2da0e310a"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "analysis/public-graphics-catalog.json",
+      "sha256": "3598c93d5dc98eae9a56586542e45f09012942fdbef9f55bfd20b4e9bcccc86e"
+    },
+    {
+      "path": "ASSETS.md",
+      "sha256": "332badbc2de27ea7f24c7c49764e9d53e0763f930b559d9aa4863875d2f9ad59"
+    },
+    {
+      "path": "research/public-graphics-catalog.md",
+      "sha256": "1714eb6bca76af93ddefd5c01322a6f6110335a5c164a54560213d547dd7d346"
+    },
+    {
+      "path": "tests/test_public_graphics_catalog.py",
+      "sha256": "3d31b5643926abefe42970f21858fc59cb494dcdac677207b4cc2799678db0f7"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
