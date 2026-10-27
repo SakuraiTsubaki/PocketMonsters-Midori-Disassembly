@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "game": "Midori",
+  "function": "FillMemory",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_fill_memory.py",
+    "tool_sha256": "be4e6c8d4c53efe135240cb7efa749ba10f0158e68750e4d209c438f3b00bd7d"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/fill_memory.asm",
+      "sha256": "8c31c093fa0bae8588735652fcb198ae9460c6a280b32243b0120392f1febb0d"
+    },
+    {
+      "path": "analysis/fill-memory-summary.json",
+      "sha256": "18359e65b10ca346991a3be29485c6a9fe0153331555e80cb09994f132f81850"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-fill-memory.json",
+      "sha256": "53c2f0ad6dbbfdb0c0ab5283e7f60f8d795382fa3fef61d7f5126ac3131c854a"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-fill-memory.json",
+      "sha256": "da0eee876679d1aeba8bd8b0eee8f41183093564dc24a929986349f409fa9715"
+    },
+    {
+      "path": "research/fill-memory-reconstruction.md",
+      "sha256": "ef918205608136720266e6276c5ad6a796d5a158587f785fe1c0529e7bb52860"
+    },
+    {
+      "path": "tests/test_fill_memory_reconstruction.py",
+      "sha256": "dfeb9fdbddfd9bc03422ad9661d5777177a777b7eb31ffb34ac761d492d10046"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+    "status": "candidate"
+  },
+  "origin_reference": true,
+  "profile": "classic",
+  "source": "src/fill_memory.asm",
+  "source_sha256": "8c31c093fa0bae8588735652fcb198ae9460c6a280b32243b0120392f1febb0d",
+  "function": {
+    "name": "FillMemory",
+    "rom_offset": 14122,
+    "bank": 0,
+    "address": 14122,
+    "range_end_exclusive": 14133,
+    "length": 11,
+    "code_sha256": "f51154152da74a85dd7c3f8008efe3277a3444d8d398fadd7682308ada975bbf",
+    "raw_bytes_published": false
+  },
+  "semantics": {
+    "destination": "HL",
+    "length": "BC",
+    "fill_value": "A",
+    "operation": "fill memory while incrementing HL",
+    "zero_length_precondition": "BC must be nonzero; zero wraps and fills 65,536 bytes",
+    "return_registers": "HL points one byte past the range; BC is zero",
+    "preserves": [
+      "DE"
+    ]
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/tilemap.asm"
+  },
+  "raw_rom_bytes_included": false
+}
