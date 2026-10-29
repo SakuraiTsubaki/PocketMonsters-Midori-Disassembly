@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+    "status": "candidate"
+  },
+  "origin_reference": true,
+  "axis": "Disassembly",
+  "profile": "classic",
+  "source": "src/clear_screen.asm",
+  "source_sha256": "f45bcb9b9dfb6492abc5013f7efd3d8ff1315954188519233337f1883a6cf65b",
+  "function": {
+    "name": "ClearScreen",
+    "rom_offset": 959,
+    "bank": 0,
+    "address": 959,
+    "range_end_exclusive": 978,
+    "length": 19,
+    "code_sha256": "4da28be4f341d9dbdf7bc6effad12e2693160cf8030aec31eaeed0ff4ecee917",
+    "raw_bytes_published": false,
+    "tail_jump": {
+      "name": "Delay3",
+      "address": 15879
+    }
+  },
+  "verified_behavior": {
+    "tilemap_address": 50080,
+    "blank_tile_value": 127,
+    "filled_byte_count": 360,
+    "counter_encoding": "BC=$0168 then INC B; C wraps for the second pass",
+    "waits_for_bg_update": "tail-jump to Delay3"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/copy2.asm"
+  },
+  "raw_rom_bytes_included": false
+}

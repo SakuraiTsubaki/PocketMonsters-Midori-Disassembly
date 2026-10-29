@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Midori",
+  "function": "ClearScreen",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/clear_screen.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "address": "0x03BF",
+      "tilemap_address": "0xC3A0",
+      "blank_tile_value": 127,
+      "delay3_address": "0x3E07",
+      "code_sha256": "4da28be4f341d9dbdf7bc6effad12e2693160cf8030aec31eaeed0ff4ecee917",
+      "evidence": "analysis/midori-jp-rev0-clear-screen.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "address": "0x03BF",
+      "tilemap_address": "0xC3A0",
+      "blank_tile_value": 127,
+      "delay3_address": "0x3DF5",
+      "code_sha256": "a6d8dd2610b694b48f72e1aadc7e6304e3daf0bb61e463bec286ec6d9d599d00",
+      "evidence": "analysis/midori-jp-rev1-clear-screen.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

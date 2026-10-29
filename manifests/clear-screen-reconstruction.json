@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "game": "Midori",
+  "axis": "Disassembly",
+  "function": "ClearScreen",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_clear_screen.py",
+    "tool_sha256": "8122f4bdbea9d93e12041df5d81788d307dfe26b68783d187c047eda11e2ea7b"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/clear_screen.asm",
+      "sha256": "f45bcb9b9dfb6492abc5013f7efd3d8ff1315954188519233337f1883a6cf65b"
+    },
+    {
+      "path": "analysis/clear-screen-summary.json",
+      "sha256": "fa9125ee71e142c9522631a15671e790019f02e5888db13569c74081c82083fa"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-clear-screen.json",
+      "sha256": "e2542dfd92b407f990847adbb9bac69e717b86f992d47b51b4c2efb15ef20390"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-clear-screen.json",
+      "sha256": "2b2690be2bb6bc785e35bb4a23b2ea264925b80be02d9f4f7916dcec2a90a28d"
+    },
+    {
+      "path": "research/clear-screen-reconstruction.md",
+      "sha256": "8b9f8a84d0b4ab9cfae3fdc5a53485fce78623d3f952268119460ab2495426e3"
+    },
+    {
+      "path": "tests/test_clear_screen_reconstruction.py",
+      "sha256": "3d748f4f4df006402c19b739b9a8974db8b964caa5f57773686ec026ac8497a6"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
