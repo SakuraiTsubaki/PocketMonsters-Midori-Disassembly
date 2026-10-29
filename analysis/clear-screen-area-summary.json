@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Midori",
+  "function": "ClearScreenArea",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/clear_screen_area.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "address": "0x0374",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/midori-jp-rev0-clear-screen-area.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "address": "0x0374",
+      "blank_tile_value": 127,
+      "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+      "evidence": "analysis/midori-jp-rev1-clear-screen-area.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

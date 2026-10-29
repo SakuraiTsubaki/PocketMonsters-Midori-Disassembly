@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "profile": "classic",
+  "target": {
+    "release": "midori-jp-rev1",
+    "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "source": "src/clear_screen_area.asm",
+  "source_sha256": "438405dd664d6e9311dd0692ee0d5a7bf7e3d19cd4ed4442388d68a32eee9d6f",
+  "function": {
+    "name": "ClearScreenArea",
+    "rom_offset": 884,
+    "bank": 0,
+    "address": 884,
+    "range_end_exclusive": 902,
+    "length": 18,
+    "code_sha256": "46400b6a016d0cbf21a7005fe91b9e063f664adf0bca1ba38446c1624a3fa3ab",
+    "raw_bytes_published": false
+  },
+  "verified_behavior": {
+    "blank_tile_value": 127,
+    "row_stride": 20,
+    "width_input_register": "C",
+    "height_input_register": "B",
+    "tilemap_pointer_register": "HL",
+    "preserves_row_start_and_dimensions": true,
+    "inner_loop_relative_delta": -4,
+    "outer_loop_relative_delta": -12
+  },
+  "cross_reference": {
+    "clear_screen_map": "analysis/midori-jp-rev1-clear-screen.json",
+    "clear_screen_map_sha256": "2b2690be2bb6bc785e35bb4a23b2ea264925b80be02d9f4f7916dcec2a90a28d"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "af519899719f0754965776faac0e836a3b906e6d",
+    "path": "home/copy2.asm"
+  },
+  "raw_rom_bytes_included": false
+}

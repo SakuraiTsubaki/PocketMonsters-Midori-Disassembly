@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Midori",
+  "function": "ClearScreenArea",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_clear_screen_area.py",
+    "tool_sha256": "f59d2c538455cb5da99d8107e1cc4c52e21c5360daa4757ba405662ed042c733"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/clear_screen_area.asm",
+      "sha256": "438405dd664d6e9311dd0692ee0d5a7bf7e3d19cd4ed4442388d68a32eee9d6f"
+    },
+    {
+      "path": "analysis/clear-screen-area-summary.json",
+      "sha256": "e885999e101fc4a843d8fdeb2eacaa8afc0a80ff0b216f2d1d66471fe3bf9a3f"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-clear-screen-area.json",
+      "sha256": "a2938e3fb69a3afe922664646cf09164012b7b2732722e46e5b6b61d8a068b2e"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-clear-screen-area.json",
+      "sha256": "abb43deb3c167c550d2b03fe6d217015ccaecd9f20f1c6c3a4c9b8cc23ac8c7f"
+    },
+    {
+      "path": "research/clear-screen-area-reconstruction.md",
+      "sha256": "7fbd283feddbfb26ba42849e7c8e3dc575353495dcfb71fd9ab42a1c11afb167"
+    },
+    {
+      "path": "tests/test_clear_screen_area_reconstruction.py",
+      "sha256": "8e83dd844d85179708251f3784594c3d6ec33664d81da31c1e74e79409e985b6"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
