@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "game": "Midori",
+  "function": "FarCopyData",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/far_copy_data.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "address": "0x01A3",
+      "saved_bank_storage": "0xCEE4",
+      "hLoadedROMBank": "0xFFB8",
+      "evidence": "analysis/midori-jp-rev0-far-copy-data.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "address": "0x01A3",
+      "saved_bank_storage": "0xCEE4",
+      "hLoadedROMBank": "0xFFB8",
+      "evidence": "analysis/midori-jp-rev1-far-copy-data.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "game": "Midori",
+  "function": "FarCopyData",
+  "profile": "classic",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_far_copy_data.py",
+    "tool_sha256": "297f4de29bbea6e692490bee7bae88686f1033969c19d403ac86d425a750bb31"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/far_copy_data.asm",
+      "sha256": "34a2443d324270ff4851d0bb4e3c0f061d1d00646c0f08448254526918d3f7e0"
+    },
+    {
+      "path": "analysis/far-copy-data-summary.json",
+      "sha256": "0ee35519313f8b578ce50205b2922946e2ba44003817b9394c08eddfac7fe27e"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-far-copy-data.json",
+      "sha256": "23e3687d038a0d58cab48ab4ecb02293fba2a805707b321421157e65cf2f96bf"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-far-copy-data.json",
+      "sha256": "94ef6e0bb8ce6c3690cf7a08fc55d47140e69d770916dac8d19b6eb041388a65"
+    },
+    {
+      "path": "research/far-copy-data-reconstruction.md",
+      "sha256": "b17fd5b48d567d57326f4c376f3a3afd6eb0a8ae04b5c7619ddd5cc2f8ac2152"
+    },
+    {
+      "path": "tests/test_far_copy_data_reconstruction.py",
+      "sha256": "3b6e3fdaf918514566a303f12ae3afa2f7be401129486ad12ce8d9adc5a42713"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
