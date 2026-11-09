@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Midori",
+  "profile": "classic",
+  "functions": [
+    "Delay3",
+    "ProtectedDelay3"
+  ],
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/delay3.asm",
+  "dependency": "analysis/delay-summary.json",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "delay3_address": "0x3E07",
+      "protected_delay3_address": "0x05EB",
+      "delay_frames_target": "0x3781",
+      "evidence": "analysis/midori-jp-rev0-delay3.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "delay3_address": "0x3DF5",
+      "protected_delay3_address": "0x05EB",
+      "delay_frames_target": "0x376F",
+      "evidence": "analysis/midori-jp-rev1-delay3.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "axis": "Disassembly",
+  "game": "Midori",
+  "profile": "classic",
+  "functions": [
+    "Delay3",
+    "ProtectedDelay3"
+  ],
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_delay3.py",
+    "tool_sha256": "167f3aea2271487fc0c2bc885686c688b51c3e1ee19cb67dfbdc9073b4f34e99"
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "analysis/delay-summary.json",
+      "sha256": "22c20f0aa11e8ea485fad5df2330b47770e3a702ffcfbd38d29b07ebf98603b7"
+    },
+    {
+      "path": "src/delay3.asm",
+      "sha256": "2cfee926b987eccc759b1dd62dfe89e47c3e5e9d91da8a4569ac6f0746e28f59"
+    },
+    {
+      "path": "analysis/delay3-summary.json",
+      "sha256": "5eeebda682ceefc5c08f8c1bc435783dd223334b84defcbbf8f1c5dd7dbcb8b2"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-delay3.json",
+      "sha256": "190e6ec994006c217b4fc2220b78ba9d87dff5ffb40cd53f1794b4395ada4d51"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-delay3.json",
+      "sha256": "1de76c7502b9e322fff2c0749d875c8fd3717dd9fbc68c4a78ffc96e1dd5f0f9"
+    },
+    {
+      "path": "research/delay3-reconstruction.md",
+      "sha256": "451451e7c1902792896bd616d06a8a34e3ff836119838f4436c4ac55d71fbb5d"
+    },
+    {
+      "path": "tests/test_delay3_reconstruction.py",
+      "sha256": "6cf48175e67f31f6daf95fac5a80bf94d1cccc55dbcc6b458bd3a2107ee38f4b"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
