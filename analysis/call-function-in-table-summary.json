@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "function": "CallFunctionInTable",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/call_function_in_table.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "address": "0x3DC7",
+      "return_address": "0x3DD7",
+      "code_sha256": "d1f3699886aa670e980a8a280f7b0d7d4a7474fe0694b18ef02154e8170868ca",
+      "evidence": "analysis/midori-jp-rev0-call-function-in-table.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "address": "0x3DB5",
+      "return_address": "0x3DC5",
+      "code_sha256": "5b019c5e1079c9ae08788c14cd943f01da8be5f77addf026e3c043d6cde93b7a",
+      "evidence": "analysis/midori-jp-rev1-call-function-in-table.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

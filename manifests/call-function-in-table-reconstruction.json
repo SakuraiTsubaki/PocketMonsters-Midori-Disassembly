@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "function": "CallFunctionInTable",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_call_function_in_table.py",
+    "tool_sha256": "d8cc618263234ef5a752bcfb576feefae31a7570d2c043a2b471fa2a257565e1",
+    "dependency": {
+      "tool": "tools/catalog_gen1_is_in_array.py",
+      "sha256": "cd31391b5203daa83fe09cc01fa8e6dfcd27abb838d1dd514060f8e24605f704"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/call_function_in_table.asm",
+      "sha256": "1f50a793da0500e1fb15c277b13f3995660905d1e14a44db7e8eacd826d4f6e5"
+    },
+    {
+      "path": "analysis/call-function-in-table-summary.json",
+      "sha256": "fd53867fc5057b74c9e9cc7df868d76eb82dc11f4ff40557f7e340fd73e51b42"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-call-function-in-table.json",
+      "sha256": "d3887c56b448ab52d57e5b0907a2ac05fd59a9c7c4794ab285938633bc74b8d4"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-call-function-in-table.json",
+      "sha256": "3c2e79d2b776a07cb852c3c2ace741e0c7b4bed02a797dd08ab4cf0ff0f578e8"
+    },
+    {
+      "path": "research/call-function-in-table-reconstruction.md",
+      "sha256": "c519928da539a283fd19fd85db0d0830dd194d0ff1b4d60be9103395c779bff2"
+    },
+    {
+      "path": "tests/test_call_function_in_table_reconstruction.py",
+      "sha256": "7c11ff9692377fd31ad89668662465b6b4f828e8bfc42b56a9277b822d5b0bfd"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
