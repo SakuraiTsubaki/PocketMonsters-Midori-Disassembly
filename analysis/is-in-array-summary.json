@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "function": "IsInArray",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/is_in_array.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "address": "0x3DDB",
+      "secondary_entry_address": "0x3DDD",
+      "code_sha256": "c50ee07ffbf329f2029271ef266271e4618079847ced00d00ff5ae03b0e11cd4",
+      "evidence": "analysis/midori-jp-rev0-is-in-array.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "address": "0x3DC9",
+      "secondary_entry_address": "0x3DCB",
+      "code_sha256": "c50ee07ffbf329f2029271ef266271e4618079847ced00d00ff5ae03b0e11cd4",
+      "evidence": "analysis/midori-jp-rev1-is-in-array.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

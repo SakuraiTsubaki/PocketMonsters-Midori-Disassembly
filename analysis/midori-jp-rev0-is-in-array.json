@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev0",
+    "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+    "status": "candidate"
+  },
+  "origin_reference": true,
+  "source": "src/is_in_array.asm",
+  "source_sha256": "babfc1026dcce9bac102586effcbfd04fa3dacbdf24977f1aa93e5aa95245486",
+  "function": {
+    "name": "IsInArray",
+    "secondary_entry": {
+      "name": "IsInRestOfArray",
+      "address": 15837
+    },
+    "rom_offset": 15835,
+    "bank": 0,
+    "address": 15835,
+    "range_end_exclusive": 15854,
+    "length": 19,
+    "code_sha256": "c50ee07ffbf329f2029271ef266271e4618079847ced00d00ff5ae03b0e11cd4",
+    "raw_bytes_published": false
+  },
+  "semantics": {
+    "input": "A search byte, HL array base and DE positive entry stride",
+    "terminator": "0xff in the first byte of an entry",
+    "result": "B is the entry index; carry is set only when found",
+    "secondary_entry": "IsInRestOfArray preserves the caller-supplied B start index",
+    "precedence": "0xff terminates before it can match a search value"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "0dbf95cd12f5b1511c62ce69efe283000f780a8f",
+    "path": "home/array2.asm"
+  },
+  "raw_rom_bytes_included": false
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "function": "IsInArray",
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_is_in_array.py",
+    "tool_sha256": "cd31391b5203daa83fe09cc01fa8e6dfcd27abb838d1dd514060f8e24605f704",
+    "dependency": {
+      "tool": "tools/catalog_gen1_fill_memory.py",
+      "sha256": "be4e6c8d4c53efe135240cb7efa749ba10f0158e68750e4d209c438f3b00bd7d"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/is_in_array.asm",
+      "sha256": "babfc1026dcce9bac102586effcbfd04fa3dacbdf24977f1aa93e5aa95245486"
+    },
+    {
+      "path": "analysis/is-in-array-summary.json",
+      "sha256": "5a989f1be777f3ad1ea208e4972a66e2c97f87d34bac984c9108bfe75af19bc6"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-is-in-array.json",
+      "sha256": "20bad2e516c9fc980b35158341c96aeb0be5f9390bb150a392e50942de64c725"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-is-in-array.json",
+      "sha256": "56a61338de4a3e9f8ac56fc161e43b0b8a5ec422b55a6f670c26c25c5747d8ca"
+    },
+    {
+      "path": "research/is-in-array-reconstruction.md",
+      "sha256": "8d97fff7228e56686ae2a0638a15ee3c76892274775c4af1b59a052bf386044d"
+    },
+    {
+      "path": "tests/test_is_in_array_reconstruction.py",
+      "sha256": "45dc65b9a6621d5d5226713a098cff07584e5945e06b02a31b9eeb372bab82ac"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
