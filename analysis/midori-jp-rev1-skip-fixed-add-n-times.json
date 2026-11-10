@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "target": {
+    "release": "midori-jp-rev1",
+    "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+    "status": "candidate"
+  },
+  "origin_reference": false,
+  "source": "src/skip_fixed_length_text_entries_add_n_times.asm",
+  "source_sha256": "a1ef71e76cf92ad35483b85d42b4d0afb6cda45cf160fa7e006fe5e0dffb0a4f",
+  "functions": {
+    "SkipFixedLengthTextEntries": {
+      "rom_offset": 15029,
+      "bank": 0,
+      "address": 15029,
+      "range_end_exclusive": 15039,
+      "length": 10,
+      "name_length": 6,
+      "raw_bytes_published": false
+    },
+    "AddNTimes": {
+      "rom_offset": 15039,
+      "bank": 0,
+      "address": 15039,
+      "range_end_exclusive": 15046,
+      "length": 7,
+      "raw_bytes_published": false
+    },
+    "adjacent_pair_sha256": "fa2f4d3fbc129ad0f2fabf342d5a7999407b6e4f4124a8f5f821b51fbdd510e1"
+  },
+  "semantics": {
+    "SkipFixedLengthTextEntries": "advance HL by A times release-specific NAME_LENGTH",
+    "AddNTimes": "advance HL by A times BC",
+    "zero_count": "return without changing HL",
+    "adjacency": "the fixed-name helper ends exactly where AddNTimes begins"
+  },
+  "naming_basis": {
+    "repository": "pret/pokered",
+    "commit": "0dbf95cd12f5b1511c62ce69efe283000f780a8f",
+    "path": "home/array.asm"
+  },
+  "raw_rom_bytes_included": false
+}

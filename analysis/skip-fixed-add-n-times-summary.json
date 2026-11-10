@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "functions": [
+    "SkipFixedLengthTextEntries",
+    "AddNTimes"
+  ],
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "source": "src/skip_fixed_length_text_entries_add_n_times.asm",
+  "releases": [
+    {
+      "id": "midori-jp-rev0",
+      "language": "Japanese",
+      "revision": 0,
+      "status": "candidate",
+      "sha256": "6576b4e0979e93d4a6fa02db893c294b7aeab3b841b1acc8658bc10b3554f33c",
+      "origin_reference": true,
+      "skip_address": "0x3AC7",
+      "add_n_times_address": "0x3AD1",
+      "name_length": 6,
+      "pair_sha256": "fa2f4d3fbc129ad0f2fabf342d5a7999407b6e4f4124a8f5f821b51fbdd510e1",
+      "evidence": "analysis/midori-jp-rev0-skip-fixed-add-n-times.json"
+    },
+    {
+      "id": "midori-jp-rev1",
+      "language": "Japanese",
+      "revision": 1,
+      "status": "candidate",
+      "sha256": "3f0dc460ca8d06be1c9ac96307c939c0ea7baa366b40c2f1f4ad63242b6c4816",
+      "origin_reference": false,
+      "skip_address": "0x3AB5",
+      "add_n_times_address": "0x3ABF",
+      "name_length": 6,
+      "pair_sha256": "fa2f4d3fbc129ad0f2fabf342d5a7999407b6e4f4124a8f5f821b51fbdd510e1",
+      "evidence": "analysis/midori-jp-rev1-skip-fixed-add-n-times.json"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}

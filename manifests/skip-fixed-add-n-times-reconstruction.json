@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "game": "Pocket Monsters Midori",
+  "functions": [
+    "SkipFixedLengthTextEntries",
+    "AddNTimes"
+  ],
+  "origin_reference": "midori-jp-rev0",
+  "release_count": 2,
+  "generator": {
+    "repository": "SakuraiTsubaki/Disassembly",
+    "tool": "tools/catalog_gen1_skip_fixed_add_n_times.py",
+    "tool_sha256": "55d7d5dff3d0f87712faca036caf16df472a5301303ddb5c5a49a00eeb955f1f",
+    "dependency": {
+      "tool": "tools/catalog_gen1_is_in_array.py",
+      "sha256": "cd31391b5203daa83fe09cc01fa8e6dfcd27abb838d1dd514060f8e24605f704"
+    }
+  },
+  "outputs": [
+    {
+      "path": "research/releases.csv",
+      "sha256": "155ea3622b1c0a4bb64d7a21c0d1f30e34e4f57039127b464b976a107b153335"
+    },
+    {
+      "path": "src/skip_fixed_length_text_entries_add_n_times.asm",
+      "sha256": "a1ef71e76cf92ad35483b85d42b4d0afb6cda45cf160fa7e006fe5e0dffb0a4f"
+    },
+    {
+      "path": "analysis/skip-fixed-add-n-times-summary.json",
+      "sha256": "148499c19d5cb93e76da293f844f7d5d34bdd62b967ba2307fd2257d0cfc7190"
+    },
+    {
+      "path": "analysis/midori-jp-rev0-skip-fixed-add-n-times.json",
+      "sha256": "3e881b433f319fa41843e4c4c0b16426c4de85d7a9035e7884d6fab1b1313fd6"
+    },
+    {
+      "path": "analysis/midori-jp-rev1-skip-fixed-add-n-times.json",
+      "sha256": "a448e6bc9abdf94bf887ca01af4239c106782082c53adad5fa529f28d6a2db1d"
+    },
+    {
+      "path": "research/skip-fixed-add-n-times-reconstruction.md",
+      "sha256": "c890f859a8b041db9fc5435a9deb498ffe7a0042a8bc833af98d9a797c60d6ad"
+    },
+    {
+      "path": "tests/test_skip_fixed_add_n_times_reconstruction.py",
+      "sha256": "28c4e9f56fb15697595e184f84c529daa45c4055178c7865c875194efc5a7e06"
+    }
+  ],
+  "raw_rom_bytes_included": false
+}
